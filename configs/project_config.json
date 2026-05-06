@@ -1,0 +1,10 @@
+{
+    "project_name": "scribble-uncertainty-lung-segmentation",
+    "paper_title": "From Scribbles to Reliable Masks: Uncertainty-Guided Weak Supervision for Chest CT Lung Lesion Segmentation",
+    "github_repo": "https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation",
+    "primary_dataset": "COVID-19 CT scans",
+    "platform": "Kaggle",
+    "gpu_required": true,
+    "seed": 42,
+    "created_at": "2026-05-06T07:43:36.359951"
+}
