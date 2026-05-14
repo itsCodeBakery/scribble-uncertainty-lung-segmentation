@@ -1,0 +1,14 @@
+{
+    "source_experiment": "unetplusplus_efficientnetb0_full_supervision",
+    "tta": true,
+    "tta_modes": [
+        "original",
+        "horizontal_flip",
+        "vertical_flip",
+        "horizontal_vertical_flip"
+    ],
+    "best_tta_threshold": 0.05,
+    "best_tta_min_component_area": 0,
+    "best_tta_validation_dice": 0.7855960130691528,
+    "lung_mask_restriction": true
+}
