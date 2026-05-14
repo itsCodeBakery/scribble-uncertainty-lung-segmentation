@@ -1,0 +1,9 @@
+{
+    "image_size": 256,
+    "hu_clip_min": -1000,
+    "hu_clip_max": 400,
+    "min_lung_pixels": 500,
+    "keep_all_infected_slices": true,
+    "keep_noninfected_lung_slices": true,
+    "seed": 42
+}
