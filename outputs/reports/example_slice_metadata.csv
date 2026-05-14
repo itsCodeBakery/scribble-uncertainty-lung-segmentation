@@ -1,0 +1,2 @@
+case_id,selected_slice_idx,ct_shape,ct_path,infection_mask_path,lung_mask_path
+coronacases_001,118,"(512, 512, 301)",/kaggle/input/datasets/andrewmvd/covid19-ct-scans/ct_scans/coronacases_org_001.nii,/kaggle/input/datasets/andrewmvd/covid19-ct-scans/infection_mask/coronacases_001.nii,/kaggle/input/datasets/andrewmvd/covid19-ct-scans/lung_mask/coronacases_001.nii
