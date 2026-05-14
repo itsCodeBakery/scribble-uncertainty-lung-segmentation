@@ -1,0 +1,7 @@
+{
+    "source_experiment": "unetplusplus_efficientnetb0_full_supervision",
+    "best_threshold": 0.1,
+    "best_min_component_area": 5,
+    "best_validation_dice_after_postprocessing": 0.7670449614524841,
+    "lung_mask_restriction": true
+}
