@@ -1,0 +1,2 @@
+total_cases,total_slices,infected_slices,noninfected_slices,train_slices,val_slices,test_slices,mean_infection_pixels_in_infected_slices,median_infection_pixels_in_infected_slices
+18,2858,1828,1030,1938,193,727,4865.414113785558,2852.0
