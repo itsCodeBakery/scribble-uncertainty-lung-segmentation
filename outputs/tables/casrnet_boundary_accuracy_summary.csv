@@ -1,0 +1,2 @@
+Method,Boundary Dice,Boundary Precision,Boundary Recall,HD95,ASSD
+CASR-Net (Ours),0.7708,0.8452,0.7468,11.3791,3.1304
