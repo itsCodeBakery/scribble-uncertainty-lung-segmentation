@@ -1,0 +1,13 @@
+case_label,case_id,slice_idx,shrink_ratio,original_scribble_pixels,remaining_scribble_pixels,lesion_pixels
+Case 1,radiopaedia_14,92,0,47,47,757
+Case 1,radiopaedia_14,92,10,47,47,757
+Case 1,radiopaedia_14,92,20,47,47,757
+Case 1,radiopaedia_14,92,30,47,36,757
+Case 1,radiopaedia_14,92,40,47,36,757
+Case 1,radiopaedia_14,92,50,47,24,757
+Case 2,coronacases_010,139,0,59,59,1414
+Case 2,coronacases_010,139,10,59,59,1414
+Case 2,coronacases_010,139,20,59,56,1414
+Case 2,coronacases_010,139,30,59,51,1414
+Case 2,coronacases_010,139,40,59,47,1414
+Case 2,coronacases_010,139,50,59,30,1414
