@@ -1,0 +1,6 @@
+case_id,slice_idx,dice_internal_selection_only,gt_pixels,pred_pixels,threshold,gradcam_target,paper_method_name
+coronacases_003,124,0.9436755712915404,3126,3088,0.035,ground_truth_lesion_region,CASR-Net (Ours)
+coronacases_003,146,0.941582914574699,1582,1602,0.035,ground_truth_lesion_region,CASR-Net (Ours)
+coronacases_003,108,0.9401197604798956,3580,3434,0.035,ground_truth_lesion_region,CASR-Net (Ours)
+coronacases_003,123,0.9390599675860768,3083,3087,0.035,ground_truth_lesion_region,CASR-Net (Ours)
+coronacases_003,122,0.9383561643845212,3238,3186,0.035,ground_truth_lesion_region,CASR-Net (Ours)
