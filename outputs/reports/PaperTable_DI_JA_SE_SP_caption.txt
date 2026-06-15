@@ -1,0 +1,1 @@
+Quantitative comparison of segmentation performance on the chest CT lung lesion dataset. DI, JA, SE, and SP denote Dice Index, Jaccard Index, sensitivity, and specificity, respectively. The best performance is highlighted in bold.
