@@ -1,0 +1,3 @@
+case_number,case_id,slice_idx,original_infection_pixels,original_lesion_scribble_pixels,cropped_infection_pixels,cropped_lesion_scribble_pixels,cropped_background_scribble_pixels
+1,coronacases_005,97,551,12,1477,28,3184
+2,coronacases_010,164,1569,54,5870,197,4224

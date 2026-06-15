@@ -1,0 +1,1 @@
+Fig. 1. Example of chest CT images and the corresponding annotations. (a) and (d) are original CT slices, (b) and (e) are fully annotated infection masks, and (c) and (f) are scribble-level annotations. Red and green annotations denote infection and background guidance, respectively.
