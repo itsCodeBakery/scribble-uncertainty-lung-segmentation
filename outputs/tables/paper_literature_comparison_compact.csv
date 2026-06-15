@@ -1,0 +1,11 @@
+Method,Reference,Dataset,Supervision Type,Score Metric,Score,Evaluation Protocol
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Patch-level weak supervision,Mean Intersection over Union (MIoU),0.756,Reported in original paper
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Patch-level weak supervision,Frequency-weighted Intersection over Union (FwIoU),0.751,Reported in original paper
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Patch-level weak supervision,Pixel Accuracy (ACC),0.857,Reported in original paper
+TransUNet,"Chen et al., Medical Image Analysis, 2024",BTCV multi-organ CT,Full-mask supervision,Average Dice Score,0.884,Reported in original paper
+TransUNet Decoder-only,"Chen et al., Medical Image Analysis, 2024",MSD HepaticVessel,Full-mask supervision,Average Dice Score,0.677,Reported in original paper
+TransUNet Decoder-only,"Chen et al., Medical Image Analysis, 2024",Pancreatic tumor CT,Full-mask supervision,Average Dice Score,0.697,Reported in original paper
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",ACDC,Scribble supervision,Average Dice Score,0.888,Reported in original paper
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",MSCMRseg,Scribble supervision,Average Dice Score,0.839,Reported in original paper
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",HeartUII,Scribble supervision,Average Dice Score,0.833,Reported in original paper
+CASR-Net (Ours),This work,Chest CT lung lesion dataset,Scribble + teacher confidence supervision,Dice Score,0.805,Our experimental protocol

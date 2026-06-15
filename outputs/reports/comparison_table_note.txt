@@ -1,0 +1,2 @@
+Important note for manuscript:
+The literature rows are not directly comparable to CASR-Net because they were reported on different datasets, modalities, annotation settings, and evaluation protocols. They should be used for literature positioning only. Direct quantitative comparison should be based on methods evaluated on our chest CT lung lesion segmentation dataset.

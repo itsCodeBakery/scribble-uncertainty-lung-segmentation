@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Ablation study of CASR-Net. BG denotes background constraint, PL denotes pseudo-labeling, and TTA denotes test-time augmentation. The final CASR-Net integrates scribble anchors, teacher-guided confidence refinement, 2.5D contextual input, and TTA-based inference.}
+\label{tab:casrnet_ablation_paper_ready}
+\begin{tabular}{llllllllllll}
+\toprule
+Variant & Scribble & BG & Teacher PL & Confidence & 2.5D & Fine-tune & TTA & Dice & IoU & MAE & GFLOPs \\
+\midrule
+Scribble only & $\checkmark$ & -- & -- & -- & -- & -- & -- & 0.0592 & 0.0314 & 0.7810 & 10.268 \\
+Scribble + BG & $\checkmark$ & $\checkmark$ & -- & -- & -- & -- & -- & 0.3377 & 0.2400 & 0.0596 & 10.268 \\
+Weak pseudo-label refinement & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & -- & -- & -- & 0.3458 & 0.2480 & 0.0527 & 10.268 \\
+CASR-Net w/o TTA & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & -- & -- & 0.7089 & 0.6127 & 0.0062 & 10.268 \\
+CASR-Net-2D + TTA & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & -- & $\checkmark$ & 0.7961 & 0.7078 & 0.0060 & 10.268 \\
+CASR-Net w/ 2.5D context & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & 0.7993 & 0.7103 & 0.0062 & 10.268 \\
+\textbf{CASR-Net (Ours)} & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & \textbf{0.8046} & \textbf{0.7165} & \textbf{0.0059} & 10.268 \\
+\bottomrule
+\end{tabular}
+\end{table}

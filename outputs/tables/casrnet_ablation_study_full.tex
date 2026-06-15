@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Ablation study of the proposed CASR-Net components. BG denotes background constraint, PL denotes pseudo-labeling, and TTA denotes test-time augmentation.}
+\label{tab:casrnet_ablation_full}
+\begin{tabular}{lllllllllrrrrrrrrrr}
+\toprule
+Variant & Scribble & BG & Weak PL & Teacher PL & Confidence & 2.5D & Fine-tune & TTA & Dice & IoU & Sensitivity & Specificity & Precision & MAE & Threshold & Min Area & Params (M) & GFLOPs \\
+\midrule
+Scribble-only & $\checkmark$ & -- & -- & -- & -- & -- & -- & -- & 0.059200 & 0.031400 & 1.000000 & 0.199100 & 0.031400 & 0.781000 & NaN & NaN & 2.672000 & 10.268000 \\
+Scribble + background & $\checkmark$ & $\checkmark$ & -- & -- & -- & -- & -- & -- & 0.337700 & 0.240000 & 0.845200 & 0.942200 & 0.295400 & 0.059600 & NaN & NaN & 2.672000 & 10.268000 \\
+Weak uncertainty refinement & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & -- & -- & -- & 0.345800 & 0.248000 & 0.792000 & 0.951100 & 0.334100 & 0.052700 & NaN & NaN & 2.672000 & 10.268000 \\
+CASR-Net 2D raw & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & $\checkmark$ & -- & -- & -- & 0.708900 & 0.612700 & 0.682100 & 0.997800 & 0.867300 & 0.006200 & NaN & NaN & 2.672000 & 10.268000 \\
+CASR-Net 2D + TTA & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & $\checkmark$ & -- & -- & $\checkmark$ & 0.796100 & 0.707800 & 0.824000 & 0.996400 & 0.836600 & 0.006000 & 0.100000 & 0.000000 & 2.672000 & 10.268000 \\
+CASR-Net-2.5D weighted + TTA & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & 0.799300 & 0.710300 & 0.845600 & 0.996300 & 0.818800 & 0.006200 & 0.030000 & 0.000000 & 2.672000 & 10.268000 \\
+CASR-Net-2.5D fine-tuned + TTA & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & 0.804600 & 0.716500 & 0.835100 & 0.996900 & 0.835500 & 0.005900 & 0.035000 & 0.000000 & 2.672000 & 10.268000 \\
+\bottomrule
+\end{tabular}
+\end{table}

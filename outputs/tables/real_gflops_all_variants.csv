@@ -1,0 +1,9 @@
+Variant,Architecture,Input Size,Parameters (M),GMACs,GFLOPs
+U-Net,U-Net,1 x 256 x 256,31.0365,54.6623,109.3245
+Attention U-Net,Attention U-Net,1 x 256 x 256,31.388,55.7717,111.5435
+UNet++ Eff-B0 full supervision,UNet++ EfficientNet-B0,1 x 256 x 256,2.6719,5.1342,10.2684
+Scribble-only,UNet++ EfficientNet-B0,1 x 256 x 256,2.6719,5.1342,10.2684
+Scribble + background,UNet++ EfficientNet-B0,1 x 256 x 256,2.6719,5.1342,10.2684
+Weak uncertainty refinement,UNet++ EfficientNet-B0,1 x 256 x 256,2.6719,5.1342,10.2684
+CASR-Net 2D,UNet++ EfficientNet-B0,1 x 256 x 256,2.6719,5.1342,10.2684
+CASR-Net (Ours),UNet++ EfficientNet-B0,3 x 256 x 256,2.6719,5.1342,10.2684

@@ -1,0 +1,11 @@
+Method,Reference,Dataset,Medical Modality,Supervision Type,Score Metric,Score,Evaluation Protocol,Directly Comparable with CASR-Net
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak supervision,Mean Intersection over Union (MIoU),0.756,Reported in original paper,No
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak supervision,Frequency-weighted Intersection over Union (FwIoU),0.751,Reported in original paper,No
+Multi-layer pseudo-supervision,"Han et al., Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak supervision,Pixel Accuracy (ACC),0.857,Reported in original paper,No
+TransUNet,"Chen et al., Medical Image Analysis, 2024",BTCV multi-organ CT,CT,Full-mask supervision,Average Dice Score,0.884,Reported in original paper,No
+TransUNet Decoder-only,"Chen et al., Medical Image Analysis, 2024",MSD HepaticVessel,CT,Full-mask supervision,Average Dice Score,0.677,Reported in original paper,No
+TransUNet Decoder-only,"Chen et al., Medical Image Analysis, 2024",Pancreatic tumor CT,CT,Full-mask supervision,Average Dice Score,0.697,Reported in original paper,No
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",ACDC,Cardiac MRI,Scribble supervision,Average Dice Score,0.888,Reported in original paper,No
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",MSCMRseg,Cardiac MRI,Scribble supervision,Average Dice Score,0.839,Reported in original paper,No
+ScribFormer,"Li et al., IEEE TMI-style manuscript, 2024",HeartUII,Cardiac CT,Scribble supervision,Average Dice Score,0.833,Reported in original paper,No
+CASR-Net (Ours),This work,Chest CT lung lesion dataset,Chest CT,Scribble + teacher confidence supervision,Dice Score,0.805,Our experimental protocol,Yes

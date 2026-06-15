@@ -1,0 +1,8 @@
+Variant,Scribble,BG,Teacher PL,Confidence,2.5D,Fine-tune,TTA,Dice,IoU,MAE,GFLOPs
+Scribble only,$\checkmark$,--,--,--,--,--,--,0.0592,0.0314,0.781,10.268
+Scribble + BG,$\checkmark$,$\checkmark$,--,--,--,--,--,0.3377,0.24,0.0596,10.268
+Weak pseudo-label refinement,$\checkmark$,$\checkmark$,--,$\checkmark$,--,--,--,0.3458,0.248,0.0527,10.268
+CASR-Net w/o TTA,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,--,--,--,0.7089,0.6127,0.0062,10.268
+CASR-Net-2D + TTA,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,--,--,$\checkmark$,0.7961,0.7078,0.006,10.268
+CASR-Net w/ 2.5D context,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,--,$\checkmark$,0.7993,0.7103,0.0062,10.268
+CASR-Net (Ours),$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,0.8046,0.7165,0.0059,10.268

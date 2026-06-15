@@ -1,0 +1,8 @@
+Method,Supervision Type,Dice Index (DI),Jaccard Index (JA),Sensitivity (SE),Specificity (SP)
+U-Net,Full-mask supervision,0.59,,,
+Attention U-Net,Full-mask supervision,0.577,,,
+UNet++ EfficientNet-B0,Full-mask supervision,0.786,0.708,,
+Scribble-only,Scribble supervision,0.059,0.031,,
+Scribble + background,Scribble + background supervision,0.338,0.24,,
+Weak uncertainty refinement,Scribble + pseudo-label supervision,0.346,0.248,,
+CASR-Net (Ours),Scribble + teacher confidence supervision,0.805,0.716,0.835,0.997

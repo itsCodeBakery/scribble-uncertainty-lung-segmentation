@@ -1,0 +1,8 @@
+Variant,Scribble,BG,Weak PL,Teacher PL,Confidence,2.5D,Fine-tune,TTA,Dice,IoU,Sensitivity,Specificity,Precision,MAE,Threshold,Min Area,Params (M),GFLOPs,Source
+Scribble-only,$\checkmark$,--,--,--,--,--,--,--,0.0592,0.0314,1.0,0.1991,0.0314,0.781,,,2.672,10.268,unetplusplus_efficientnetb0_scribble_only_history.csv
+Scribble + background,$\checkmark$,$\checkmark$,--,--,--,--,--,--,0.3377,0.24,0.8452,0.9422,0.2954,0.0596,,,2.672,10.268,unetplusplus_efficientnetb0_scribble_background_history.csv
+Weak uncertainty refinement,$\checkmark$,$\checkmark$,$\checkmark$,--,$\checkmark$,--,--,--,0.3458,0.248,0.792,0.9511,0.3341,0.0527,,,2.672,10.268,unetplusplus_uncertainty_guided_refinement_history.csv
+CASR-Net 2D raw,$\checkmark$,$\checkmark$,--,$\checkmark$,$\checkmark$,--,--,--,0.7089,0.6127,0.6821,0.9978,0.8673,0.0062,,,2.672,10.268,teacher_assisted_student_refinement_strict_history.csv
+CASR-Net 2D + TTA,$\checkmark$,$\checkmark$,--,$\checkmark$,$\checkmark$,--,--,$\checkmark$,0.7961,0.7078,0.824,0.9964,0.8366,0.006,0.1,0.0,2.672,10.268,student_tta_threshold_search.csv
+CASR-Net-2.5D weighted + TTA,$\checkmark$,$\checkmark$,--,$\checkmark$,$\checkmark$,$\checkmark$,--,$\checkmark$,0.7993,0.7103,0.8456,0.9963,0.8188,0.0062,0.03,0.0,2.672,10.268,casrnet_student_25d_weighted_fine_threshold_search.csv
+CASR-Net-2.5D fine-tuned + TTA,$\checkmark$,$\checkmark$,--,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,$\checkmark$,0.8046,0.7165,0.8351,0.9969,0.8355,0.0059,0.035,0.0,2.672,10.268,casrnet_student_25d_finetuned_tta_threshold_search.csv

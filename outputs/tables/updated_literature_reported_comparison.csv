@@ -1,0 +1,11 @@
+Paper / Method,Venue / Year,Dataset,Modality,Supervision,Main Metric,Reported Result,Directly Comparable to Our Dataset,Reason
+Multi-layer pseudo-supervision,"Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak labels,MIoU,0.756,No,"Different modality, dataset, and metric"
+Multi-layer pseudo-supervision,"Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak labels,FwIoU,0.751,No,"Different modality, dataset, and metric"
+Multi-layer pseudo-supervision,"Medical Image Analysis, 2022",LUAD-HistoSeg,Histopathology,Patch-level weak labels,ACC,0.857,No,"Different modality, dataset, and metric"
+TransUNet,"Medical Image Analysis, 2024",BTCV multi-organ CT,CT,Full mask,Avg. Dice,0.884,No,Different task: multi-organ segmentation
+TransUNet Decoder-only,"Medical Image Analysis, 2024",MSD HepaticVessel,CT,Full mask,Avg. Dice,0.677,No,Different anatomical target and full supervision
+TransUNet Decoder-only,"Medical Image Analysis, 2024",Pancreatic tumor CT,CT,Full mask,Avg. Dice,0.697,No,Different anatomical target and full supervision
+ScribFormer,"TMI-style manuscript, 2024",ACDC,Cardiac MRI,Scribble,Avg. Dice,0.888,No,Different modality and anatomical target
+ScribFormer,"TMI-style manuscript, 2024",MSCMRseg,Cardiac MRI,Scribble,Avg. Dice,0.839,No,Different modality and anatomical target
+ScribFormer,"TMI-style manuscript, 2024",HeartUII,Cardiac CT,Scribble,Avg. Dice,0.833,No,Different anatomical target
+CASR-Net (Ours),This work,Chest CT lung lesion,CT,Scribble + teacher confidence,Dice,0.805,Yes,Evaluated under our chest CT protocol

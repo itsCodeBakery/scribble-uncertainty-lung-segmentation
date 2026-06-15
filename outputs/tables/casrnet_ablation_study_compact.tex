@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Ablation study of CASR-Net. Each component progressively improves weakly supervised lung lesion segmentation while maintaining a lightweight inference model.}
+\label{tab:casrnet_ablation_compact}
+\begin{tabular}{llllllllrrrr}
+\toprule
+Variant & Scribble & BG & Teacher PL & Confidence & 2.5D & Fine-tune & TTA & Dice & IoU & MAE & GFLOPs \\
+\midrule
+Scribble-only & $\checkmark$ & -- & -- & -- & -- & -- & -- & 0.059200 & 0.031400 & 0.781000 & 10.268000 \\
+Scribble + background & $\checkmark$ & $\checkmark$ & -- & -- & -- & -- & -- & 0.337700 & 0.240000 & 0.059600 & 10.268000 \\
+Weak uncertainty refinement & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & -- & -- & -- & 0.345800 & 0.248000 & 0.052700 & 10.268000 \\
+CASR-Net 2D raw & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & -- & -- & 0.708900 & 0.612700 & 0.006200 & 10.268000 \\
+CASR-Net 2D + TTA & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & -- & $\checkmark$ & 0.796100 & 0.707800 & 0.006000 & 10.268000 \\
+CASR-Net-2.5D weighted + TTA & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & -- & $\checkmark$ & 0.799300 & 0.710300 & 0.006200 & 10.268000 \\
+CASR-Net-2.5D fine-tuned + TTA & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & 0.804600 & 0.716500 & 0.005900 & 10.268000 \\
+\bottomrule
+\end{tabular}
+\end{table}
