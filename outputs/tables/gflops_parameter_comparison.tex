@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Computational complexity comparison of segmentation models.}
+\label{tab:gflops_comparison}
+\begin{tabular}{lcccc}
+\toprule
+Model & Input Size & Parameters (M) & GMACs & GFLOPs & Best Dice \\
+\midrule
+U-Net & 1 x 256 x 256 & 31.036000 & 54.662000 & 109.325000 & 0.589700 \\
+Attention U-Net & 1 x 256 x 256 & 31.388000 & 55.772000 & 111.543000 & 0.577200 \\
+UNet++ EfficientNet-B0 & 1 x 256 x 256 & 2.672000 & 5.134000 & 10.268000 & 0.785600 \\
+CASR-Net Student & 1 x 256 x 256 & 2.672000 & 5.134000 & 10.268000 & 0.796100 \\
+\bottomrule
+\end{tabular}
+\end{table}

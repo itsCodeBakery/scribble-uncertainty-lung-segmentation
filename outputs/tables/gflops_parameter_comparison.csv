@@ -1,0 +1,5 @@
+Model,Input Size,Parameters (M),GMACs,GFLOPs,Best Dice
+U-Net,1 x 256 x 256,31.036,54.662,109.325,0.5897
+Attention U-Net,1 x 256 x 256,31.388,55.772,111.543,0.5772
+UNet++ EfficientNet-B0,1 x 256 x 256,2.672,5.134,10.268,0.7856
+CASR-Net Student,1 x 256 x 256,2.672,5.134,10.268,0.7961

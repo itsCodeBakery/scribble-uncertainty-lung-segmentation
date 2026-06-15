@@ -1,0 +1,20 @@
+\begin{table}
+\caption{Complete quantitative comparison of segmentation performance and computational complexity.}
+\label{tab:complete_metrics}
+\begin{tabular}{lcccccccccccc}
+\toprule
+Method & Dice & IoU & Sensitivity & Specificity & Precision & MAE & Accuracy & FPR & FNR & Threshold & Min Area & Parameters (M) & GFLOPs \\
+\midrule
+U-Net & 0.589700 & 0.492500 & 0.521900 & 0.999000 & 0.841500 & 0.009400 & NaN & NaN & NaN & NaN & NaN & 31.036000 & 109.325000 \\
+Attention U-Net & 0.577200 & 0.493300 & 0.639600 & 0.995000 & 0.743200 & 0.008800 & NaN & NaN & NaN & NaN & NaN & 31.388000 & 111.543000 \\
+UNet++ EfficientNet-B0 & 0.695600 & 0.594200 & 0.665500 & 0.998200 & 0.819900 & 0.006900 & NaN & NaN & NaN & NaN & NaN & 2.672000 & 10.268000 \\
+UNet++ EfficientNet-B0 + Threshold & 0.767000 & 0.675000 & 0.759500 & 0.997700 & 0.863400 & 0.006700 & NaN & NaN & NaN & 0.100000 & 5.000000 & 2.672000 & 10.268000 \\
+UNet++ EfficientNet-B0 + TTA & 0.785600 & 0.696400 & 0.812500 & 0.996800 & 0.826900 & 0.006300 & NaN & NaN & NaN & 0.050000 & 0.000000 & 2.672000 & 10.268000 \\
+Scribble Only & 0.059200 & 0.031400 & 1.000000 & 0.199100 & 0.031400 & 0.781000 & NaN & NaN & NaN & NaN & NaN & 2.672000 & 10.268000 \\
+Scribble + Background & 0.337700 & 0.240000 & 0.845200 & 0.942200 & 0.295400 & 0.059600 & NaN & NaN & NaN & NaN & NaN & 2.672000 & 10.268000 \\
+Uncertainty-Guided Refinement & 0.345800 & 0.248000 & 0.792000 & 0.951100 & 0.334100 & 0.052700 & NaN & NaN & NaN & NaN & NaN & 2.672000 & 10.268000 \\
+CASR-Net Student Raw & 0.708900 & 0.612700 & 0.682100 & 0.997800 & 0.867300 & 0.006200 & NaN & NaN & NaN & NaN & NaN & 2.672000 & 10.268000 \\
+CASR-Net Student + TTA & 0.796100 & 0.707800 & 0.824000 & 0.996400 & 0.836600 & 0.006000 & NaN & NaN & NaN & 0.100000 & 0.000000 & 2.672000 & 10.268000 \\
+\bottomrule
+\end{tabular}
+\end{table}

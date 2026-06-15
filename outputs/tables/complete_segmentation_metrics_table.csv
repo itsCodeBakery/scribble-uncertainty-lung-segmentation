@@ -1,0 +1,11 @@
+Method,Dice,IoU,Sensitivity,Specificity,Precision,MAE,Accuracy,FPR,FNR,Threshold,Min Area,Parameters (M),GFLOPs,Source File
+U-Net,0.5897,0.4925,0.5219,0.999,0.8415,0.0094,,,,,,31.036,109.325,unet_full_supervision_baseline_history.csv
+Attention U-Net,0.5772,0.4933,0.6396,0.995,0.7432,0.0088,,,,,,31.388,111.543,attention_unet_full_supervision_balanced_history.csv
+UNet++ EfficientNet-B0,0.6956,0.5942,0.6655,0.9982,0.8199,0.0069,,,,,,2.672,10.268,unetplusplus_efficientnetb0_full_supervision_history.csv
+UNet++ EfficientNet-B0 + Threshold,0.767,0.675,0.7595,0.9977,0.8634,0.0067,,,,0.1,5.0,2.672,10.268,threshold_postprocessing_search.csv
+UNet++ EfficientNet-B0 + TTA,0.7856,0.6964,0.8125,0.9968,0.8269,0.0063,,,,0.05,0.0,2.672,10.268,tta_threshold_postprocessing_search.csv
+Scribble Only,0.0592,0.0314,1.0,0.1991,0.0314,0.781,,,,,,2.672,10.268,unetplusplus_efficientnetb0_scribble_only_history.csv
+Scribble + Background,0.3377,0.24,0.8452,0.9422,0.2954,0.0596,,,,,,2.672,10.268,unetplusplus_efficientnetb0_scribble_background_history.csv
+Uncertainty-Guided Refinement,0.3458,0.248,0.792,0.9511,0.3341,0.0527,,,,,,2.672,10.268,unetplusplus_uncertainty_guided_refinement_history.csv
+CASR-Net Student Raw,0.7089,0.6127,0.6821,0.9978,0.8673,0.0062,,,,,,2.672,10.268,teacher_assisted_student_refinement_strict_history.csv
+CASR-Net Student + TTA,0.7961,0.7078,0.824,0.9964,0.8366,0.006,,,,0.1,0.0,2.672,10.268,student_tta_threshold_search.csv
