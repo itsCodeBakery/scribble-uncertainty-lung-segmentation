@@ -1,0 +1,2 @@
+Model,Input Size,Parameters (M),GMACs,GFLOPs
+CASR-Net-2.5D,3 x 256 x 256,2.672,5.134,10.268

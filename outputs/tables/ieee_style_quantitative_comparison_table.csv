@@ -1,0 +1,9 @@
+Train Data,Test Data,Annotation,Method,Dice,IoU,Sensitivity,Specificity,Precision,FPR,FNR,MAE,Threshold,Min Area,Params (M),GFLOPs
+Chest CT,Chest CT,Dense,U-Net,0.5897,0.4925,0.5219,0.999,0.8415,,,0.0094,,,31.036,109.325
+Chest CT,Chest CT,Dense,Attention U-Net,0.5772,0.4933,0.6396,0.995,0.7432,,,0.0088,,,31.388,111.543
+Chest CT,Chest CT,Dense,UNet++ Eff-B0 + TTA,0.7856,0.6964,0.8125,0.9968,0.8269,,,0.0063,0.05,0.0,2.672,10.268
+Chest CT,Chest CT,Scribble,Scribble Only,0.0592,0.0314,1.0,0.1991,0.0314,,,0.781,,,2.672,10.268
+Chest CT,Chest CT,Scribble + BG,Scribble + Background,0.3377,0.24,0.8452,0.9422,0.2954,,,0.0596,,,2.672,10.268
+Chest CT,Chest CT,Pseudo-label,Uncertainty Refinement,0.3458,0.248,0.792,0.9511,0.3341,,,0.0527,,,2.672,10.268
+Chest CT,Chest CT,Scribble + Confidence,CASR-Net 2D + TTA,0.7961,0.7078,0.824,0.9964,0.8366,,,0.006,0.1,0.0,2.672,10.268
+Chest CT,Chest CT,Scribble + Confidence,CASR-Net-2.5D Fine-tuned + TTA,0.8046,0.7165,0.8351,0.9969,0.8355,0.0031,0.2789,0.0059,0.035,0.0,2.672,10.268

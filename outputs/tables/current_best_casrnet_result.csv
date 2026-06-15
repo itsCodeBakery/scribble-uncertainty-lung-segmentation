@@ -1,0 +1,2 @@
+Method,Threshold,Min Area,Dice,IoU,Sensitivity,Specificity,Precision,Accuracy,FPR,FNR,MAE
+CASR-Net-2.5D Fine-tuned + TTA,0.035,0,0.804594,0.716492,0.835124,0.996862,0.835486,0.994139,0.003138,0.278865,0.005861

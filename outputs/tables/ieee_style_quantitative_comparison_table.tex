@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Quantitative comparison of the proposed CASR-Net with baseline and weakly supervised segmentation methods. Higher Dice, IoU, sensitivity, specificity, and precision are better, while lower FPR, FNR, MAE, parameters, and GFLOPs are preferable.}
+\label{tab:quantitative_comparison}
+\begin{tabular}{lll l cccccccccc}
+\toprule
+Train Data & Test Data & Annotation & Method & Dice & IoU & Sensitivity & Specificity & Precision & FPR & FNR & MAE & Threshold & Min Area & Params (M) & GFLOPs \\
+\midrule
+Chest CT & Chest CT & Dense & U-Net & 0.589700 & 0.492500 & 0.521900 & 0.999000 & 0.841500 & NaN & NaN & 0.009400 & NaN & NaN & 31.036000 & 109.325000 \\
+Chest CT & Chest CT & Dense & Attention U-Net & 0.577200 & 0.493300 & 0.639600 & 0.995000 & 0.743200 & NaN & NaN & 0.008800 & NaN & NaN & 31.388000 & 111.543000 \\
+Chest CT & Chest CT & Dense & UNet++ Eff-B0 + TTA & 0.785600 & 0.696400 & 0.812500 & 0.996800 & 0.826900 & NaN & NaN & 0.006300 & 0.050000 & 0.000000 & 2.672000 & 10.268000 \\
+Chest CT & Chest CT & Scribble & Scribble Only & 0.059200 & 0.031400 & 1.000000 & 0.199100 & 0.031400 & NaN & NaN & 0.781000 & NaN & NaN & 2.672000 & 10.268000 \\
+Chest CT & Chest CT & Scribble + BG & Scribble + Background & 0.337700 & 0.240000 & 0.845200 & 0.942200 & 0.295400 & NaN & NaN & 0.059600 & NaN & NaN & 2.672000 & 10.268000 \\
+Chest CT & Chest CT & Pseudo-label & Uncertainty Refinement & 0.345800 & 0.248000 & 0.792000 & 0.951100 & 0.334100 & NaN & NaN & 0.052700 & NaN & NaN & 2.672000 & 10.268000 \\
+Chest CT & Chest CT & Scribble + Confidence & CASR-Net 2D + TTA & 0.796100 & 0.707800 & 0.824000 & 0.996400 & 0.836600 & NaN & NaN & 0.006000 & 0.100000 & 0.000000 & 2.672000 & 10.268000 \\
+Chest CT & Chest CT & Scribble + Confidence & CASR-Net-2.5D Fine-tuned + TTA & 0.804600 & 0.716500 & 0.835100 & 0.996900 & 0.835500 & 0.003100 & 0.278900 & 0.005900 & 0.035000 & 0.000000 & 2.672000 & 10.268000 \\
+\bottomrule
+\end{tabular}
+\end{table}
