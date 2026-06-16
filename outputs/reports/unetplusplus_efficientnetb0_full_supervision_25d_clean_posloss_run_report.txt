@@ -1,0 +1,9 @@
+Experiment: unetplusplus_efficientnetb0_full_supervision_25d_clean_posloss
+Device: cuda
+Epochs requested: 30
+Best epoch: 17
+Best validation Dice: 0.761674
+Best validation loss: 0.281868
+Best checkpoint: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/checkpoints/unetplusplus_efficientnetb0_full_supervision_25d_clean_posloss/best_model.pth
+Last checkpoint: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/checkpoints/unetplusplus_efficientnetb0_full_supervision_25d_clean_posloss/last_model.pth
+Previous best teacher checkpoint preserved: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/checkpoints/unetplusplus_efficientnetb0_full_supervision_25d/best_model.pth
