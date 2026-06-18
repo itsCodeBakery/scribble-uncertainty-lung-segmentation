@@ -1,0 +1,1 @@
+TTA threshold and connected-component post-processing search for the MosMedData 3-slice high-sensitivity teacher model. This experiment increases positive weighting and Tversky false-negative penalty to improve lesion sensitivity.
