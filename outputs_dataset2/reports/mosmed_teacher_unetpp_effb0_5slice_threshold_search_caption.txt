@@ -1,0 +1,1 @@
+Threshold search for the MosMedData 5-slice 2.5D full-supervised teacher model. Raw and lung-constrained probability modes are evaluated across thresholds.
