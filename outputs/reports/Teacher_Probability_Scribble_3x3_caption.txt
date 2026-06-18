@@ -1,0 +1,1 @@
+Teacher-guided scribble refinement visualization for three representative chest CT slices. The first column shows the CT slices, the second column shows sparse scribble annotations, and the third column shows teacher-generated probability maps indicating lesion-likelihood regions.

@@ -1,0 +1,1 @@
+CASR-Net teacher-guided scribble refinement pipeline shown on five representative chest CT slices. The columns show slice extraction, sparse scribble annotation used as weak input, teacher-generated probability map, lung mask constraint, and lung-constrained sparse scribble annotation.

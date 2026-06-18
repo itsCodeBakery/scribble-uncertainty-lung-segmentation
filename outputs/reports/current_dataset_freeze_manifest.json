@@ -1,0 +1,205 @@
+{
+  "freeze_time": "2026-06-18 05:39:44",
+  "project_dir": "/kaggle/working/scribble-uncertainty-lung-segmentation",
+  "paper_method_name": "CASR-Net",
+  "current_dataset": "COVID-19 CT infection segmentation dataset",
+  "final_reported_global_metrics": {
+    "Dice_Index_DI": 0.804594,
+    "Jaccard_Index_JA": 0.716492,
+    "Sensitivity_SE": 0.835124,
+    "Specificity_SP": 0.996862,
+    "Precision": 0.835486,
+    "MAE": 0.005861,
+    "Threshold": 0.035,
+    "HD95": 11.3791,
+    "ASSD": 3.1304
+  },
+  "notes": [
+    "Final quantitative table should use saved final CASR-Net metrics, not the recovered visualization checkpoint.",
+    "Recovered CASR-Net checkpoint is mainly for qualitative prediction visualization.",
+    "Teacher checkpoint alone produced low Dice when evaluated with CASR-Net settings and should not be reported as final CASR-Net.",
+    "Before starting another dataset, keep its outputs in a separate folder or branch."
+  ],
+  "files": [
+    {
+      "path": "outputs/tables/casrnet_ours_paper_ready_metrics.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/tables/casrnet_ours_paper_ready_metrics.tex",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/figures/paper/casrnet_ours_paper_ready_metrics.png",
+      "exists": true,
+      "size_mb": 0.106
+    },
+    {
+      "path": "outputs/figures/paper/casrnet_ours_paper_ready_metrics.pdf",
+      "exists": true,
+      "size_mb": 0.015
+    },
+    {
+      "path": "outputs/tables/casrnet_ablation_clean_final.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/tables/casrnet_ablation_clean_final.tex",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/figures/paper/casrnet_ablation_clean_final.png",
+      "exists": true,
+      "size_mb": 0.279
+    },
+    {
+      "path": "outputs/figures/paper/casrnet_ablation_clean_final.pdf",
+      "exists": true,
+      "size_mb": 0.03
+    },
+    {
+      "path": "outputs/figures/paper/rawMethodology.png",
+      "exists": true,
+      "size_mb": 2.755
+    },
+    {
+      "path": "outputs/figures/paper/rawMethodology.pdf",
+      "exists": true,
+      "size_mb": 3.098
+    },
+    {
+      "path": "outputs/reports/rawMethodology_metadata.csv",
+      "exists": true,
+      "size_mb": 0.002
+    },
+    {
+      "path": "outputs/reports/rawMethodology_caption.txt",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/figures/paper/CASRNet_Qualitative_Recovered_5x5.png",
+      "exists": true,
+      "size_mb": 1.718
+    },
+    {
+      "path": "outputs/figures/paper/CASRNet_Qualitative_Recovered_5x5.pdf",
+      "exists": true,
+      "size_mb": 2.277
+    },
+    {
+      "path": "outputs/reports/CASRNet_Qualitative_Recovered_5x5_metadata.csv",
+      "exists": true,
+      "size_mb": 0.002
+    },
+    {
+      "path": "outputs/reports/CASRNet_Qualitative_Recovered_5x5_caption.txt",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/figures/paper/CASRNet_5x5_Slice_Scribble_Teacher_LungConstraint.png",
+      "exists": true,
+      "size_mb": 2.091
+    },
+    {
+      "path": "outputs/reports/CASRNet_5x5_Slice_Scribble_Teacher_LungConstraint_caption.txt",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/reports/CASRNet_5x5_Slice_Scribble_Teacher_LungConstraint_metadata.csv",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/figures/paper/Teacher_Probability_Scribble_3x3.png",
+      "exists": true,
+      "size_mb": 1.005
+    },
+    {
+      "path": "outputs/reports/Teacher_Probability_Scribble_3x3_caption.txt",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/reports/Teacher_Probability_Scribble_3x3_metadata.csv",
+      "exists": true,
+      "size_mb": 0.001
+    },
+    {
+      "path": "outputs/figures/paper/Teacher_Probability_Scribble_Example.png",
+      "exists": true,
+      "size_mb": 0.424
+    },
+    {
+      "path": "outputs/reports/Teacher_Probability_Scribble_Example_caption.txt",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/reports/Teacher_Probability_Scribble_Example_metadata.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/checkpoints/casrnet_student_recovered_from_teacher_tta/best_model.pth",
+      "exists": true,
+      "size_mb": 72.605
+    },
+    {
+      "path": "outputs/checkpoints/casrnet_student_recovered_from_teacher_tta/last_model.pth",
+      "exists": true,
+      "size_mb": 72.605
+    },
+    {
+      "path": "outputs/metrics/casrnet_student_recovered_from_teacher_tta_history.csv",
+      "exists": true,
+      "size_mb": 0.002
+    },
+    {
+      "path": "outputs/metrics/casrnet_student_25d_finetuned_tta_threshold_search.csv",
+      "exists": true,
+      "size_mb": 0.045
+    },
+    {
+      "path": "outputs/metrics/casrnet_25d_finetuned_per_slice_metrics.csv",
+      "exists": true,
+      "size_mb": 0.032
+    },
+    {
+      "path": "outputs/metrics/casrnet_25d_finetuned_per_case_metrics.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/metrics/casrnet_boundary_metrics_per_slice.csv",
+      "exists": true,
+      "size_mb": 0.02
+    },
+    {
+      "path": "outputs/metrics/casrnet_boundary_metrics_per_case.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/tables/current_best_casrnet_result.csv",
+      "exists": true,
+      "size_mb": 0.0
+    },
+    {
+      "path": "outputs/reports/casrnet_recovery_scan_report.csv",
+      "exists": true,
+      "size_mb": 3.779
+    },
+    {
+      "path": "outputs/reports/casrnet_recovery_scan_summary.txt",
+      "exists": true,
+      "size_mb": 0.006
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+
+CURRENT DATASET FREEZE SUMMARY
+==============================
+
+Method:
+CASR-Net: Confidence-Aware Scribble Refinement for Weakly Supervised Lung Lesion Segmentation in Chest CT
+
+Current dataset:
+COVID-19 CT infection segmentation dataset
+
+Final paper-facing metrics:
+DI / Dice Index:      0.804594
+JA / Jaccard Index:   0.716492
+Sensitivity:          0.835124
+Specificity:          0.996862
+Precision:            0.835486
+MAE:                  0.005861
+HD95:                 11.3791
+ASSD:                 3.1304
+Threshold:            0.035
+
+Important note:
+The recovered checkpoint is for qualitative visualization.
+The final quantitative table should use the saved final CASR-Net metrics.
+
+Before moving to another dataset:
+1. Keep this dataset frozen.
+2. Use a new branch or new output folder for the new dataset.
+3. Do not overwrite current outputs.
+4. Keep all new-dataset metrics separate.

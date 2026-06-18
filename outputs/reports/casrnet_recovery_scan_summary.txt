@@ -1,0 +1,72 @@
+CASR-Net recovery scan summary
+========================================
+Total candidate files found: 17391
+csv_metric_or_report: 35
+prediction_or_mask: 17356
+
+Top checkpoint candidates:
+None
+
+Top prediction/mask candidates:
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_008_slice_0079.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_10_slice_0311.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_008_slice_0266.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_40_slice_0074.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_006_slice_0073.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_008_slice_0070.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_10_slice_0363.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_005_slice_0128.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_10_slice_0166.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_007_slice_0214.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_008_slice_0263.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_005_slice_0161.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_10_slice_0249.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_005_slice_0108.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_4_slice_0009.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/radiopaedia_10_slice_0371.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_007_slice_0016.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_007_slice_0113.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_008_slice_0055.npy
+- score=4 size=0.25MB path=/kaggle/working/scribble-uncertainty-lung-segmentation/outputs/predictions/teacher_tta_probabilities/coronacases_010_slice_0207.npy
+
+Useful CSV findings:
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_25d_finetuned_tta_threshold_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_25d_weighted_tta_threshold_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_25d_finetuned_per_slice_metrics.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_25d_weighted_fine_threshold_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_boundary_metrics_per_slice.csv
+  Useful columns: ['pred_pixels']
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_refinement_25d_finetuned_history.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_25d_finetuned_per_case_metrics.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_boundary_metrics_per_case.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_ours_final_metrics_per_slice.csv
+  Useful columns: ['image_path', 'gt_path', 'lung_path', 'pred_area', 'prob_max', 'prob_mean']
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/student_tta_threshold_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_refinement_25d_weighted_history.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/casrnet_student_refinement_25d_strict_history.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/reports/CASRNet_Qualitative_Prediction_5x5_metadata.csv
+  Useful columns: ['image_path']
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/tables/casrnet_boundary_accuracy_summary.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/threshold_postprocessing_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/tta_threshold_postprocessing_search.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/teacher_assisted_student_refinement_strict_history.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/metrics/teacher_initialized_student_soft_distillation_history.csv
+  Useful columns: []
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/reports/CASRNet_6x6_Slice_Scribble_Teacher_Lung_TTA_metadata.csv
+  Useful columns: ['image_path', 'scribble_path', 'lung_mask_path', 'mask_path', 'teacher_prob_min', 'teacher_prob_max', 'teacher_prob_mean', 'tta_prob_min', 'tta_prob_max', 'tta_prob_mean']
+- /kaggle/working/scribble-uncertainty-lung-segmentation/outputs/reports/casrnet_25d_predicted_lesion_bounding_boxes_metadata.csv
+  Useful columns: []

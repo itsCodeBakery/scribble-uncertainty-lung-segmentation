@@ -1,0 +1,2 @@
+split_file,selected_row,image_path,scribble_path,gt_mask_path,checkpoint,probability_min,probability_max,probability_mean
+data/splits/test_slices_25d.csv,27,data/processed/images/coronacases_001_slice_0082.npy,data/scribbles/coronacases_001_slice_0082.npy,data/processed/infection_masks/coronacases_001_slice_0082.npy,outputs/checkpoints/unetplusplus_efficientnetb0_full_supervision_25d_clean_posloss/best_model.pth,5.138878123034374e-07,0.9999967813491821,0.0005654787528328598

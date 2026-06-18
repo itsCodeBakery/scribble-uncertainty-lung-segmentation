@@ -1,0 +1,6 @@
+selected_row,image_path,scribble_path,lung_mask_path,lesion_area_pixels,teacher_probability_min,teacher_probability_max,teacher_probability_mean
+717,data/processed/images/radiopaedia_7_slice_0034.npy,data/scribbles/radiopaedia_7_slice_0034.npy,data/processed/lung_masks/radiopaedia_7_slice_0034.npy,4460.0,2.861215307348175e-06,0.9999957084655762,0.03219668194651604
+588,data/processed/images/coronacases_009_slice_0128.npy,data/scribbles/coronacases_009_slice_0128.npy,data/processed/lung_masks/coronacases_009_slice_0128.npy,1102.0,2.2616870865022065e-06,1.0,0.010904254391789436
+689,data/processed/images/radiopaedia_7_slice_0006.npy,data/scribbles/radiopaedia_7_slice_0006.npy,data/processed/lung_masks/radiopaedia_7_slice_0006.npy,566.0,3.620770485213143e-06,1.0,0.004304209258407354
+556,data/processed/images/coronacases_009_slice_0096.npy,data/scribbles/coronacases_009_slice_0096.npy,data/processed/lung_masks/coronacases_009_slice_0096.npy,292.0,1.0656297035893658e-06,0.9999772310256958,0.002739198040217161
+168,data/processed/images/coronacases_001_slice_0223.npy,data/scribbles/coronacases_001_slice_0223.npy,data/processed/lung_masks/coronacases_001_slice_0223.npy,51.0,6.214146196725778e-06,0.12269275635480881,0.0006569901015609503

@@ -1,0 +1,4 @@
+selected_row,image_path,scribble_path,lesion_area_pixels,teacher_probability_min,teacher_probability_max,teacher_probability_mean
+717,data/processed/images/radiopaedia_7_slice_0034.npy,data/scribbles/radiopaedia_7_slice_0034.npy,4460.0,9.717319926494383e-07,0.9999904632568359,0.012136443518102169
+689,data/processed/images/radiopaedia_7_slice_0006.npy,data/scribbles/radiopaedia_7_slice_0006.npy,566.0,5.440558084046643e-07,0.9999884366989136,0.00278194691054523
+168,data/processed/images/coronacases_001_slice_0223.npy,data/scribbles/coronacases_001_slice_0223.npy,51.0,5.44886825082358e-06,0.14725130796432495,0.0006701087695546448

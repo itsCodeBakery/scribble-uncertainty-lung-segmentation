@@ -1,0 +1,1 @@
+Teacher-guided scribble refinement example. (a) Input chest CT slice, (b) sparse scribble annotation used as weak supervision, and (c) teacher prediction probability map showing lesion-likelihood regions used to guide pseudo-label refinement.
