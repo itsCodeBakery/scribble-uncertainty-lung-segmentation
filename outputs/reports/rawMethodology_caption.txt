@@ -1,0 +1,1 @@
+Raw methodology visualization of the proposed CASR-Net pipeline. Each row shows a representative chest CT slice, sparse scribble annotation used as weak input, teacher prediction probability map, lung mask constraint, lung-constrained sparse scribble annotation, and TTA 4-flip aggregation.
