@@ -1,0 +1,1 @@
+Comparison of CASR-Net with representative methods from the uploaded reference papers. DI, JA, SE, and SP denote Dice Index, Jaccard Index, sensitivity, and specificity, respectively. N/R indicates that the metric was not reported in the corresponding paper. The literature scores are reported on different datasets and protocols and are therefore used for positioning only.
