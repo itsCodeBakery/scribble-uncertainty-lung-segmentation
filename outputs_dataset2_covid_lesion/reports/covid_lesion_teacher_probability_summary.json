@@ -1,0 +1,50 @@
+{
+  "dataset": "COVID-19 CT scan lesion segmentation dataset",
+  "teacher_checkpoint": "outputs_dataset2_covid_lesion/checkpoints/covid_lesion_teacher_unetpp_effb0/best_model.pth",
+  "prediction_directory": "outputs_dataset2_covid_lesion/predictions/covid_lesion_teacher_tta_probabilities",
+  "total_probability_maps": 2729,
+  "splits": {
+    "train": {
+      "n_probability_maps": 1864,
+      "mean_prob_max": 0.994991390804996,
+      "mean_prob_mean": 0.016985575141994412,
+      "mean_prob_std": 0.102866470723398
+    },
+    "val": {
+      "n_probability_maps": 413,
+      "mean_prob_max": 0.9700907791945542,
+      "mean_prob_mean": 0.00865331167710627,
+      "mean_prob_std": 0.07607865506413974
+    },
+    "test": {
+      "n_probability_maps": 352,
+      "mean_prob_max": 0.9782133400632037,
+      "mean_prob_mean": 0.010836325630252346,
+      "mean_prob_std": 0.08343751953607766
+    },
+    "external_test": {
+      "n_probability_maps": 100,
+      "mean_prob_max": 0.9901770409941674,
+      "mean_prob_mean": 0.08112087031851843,
+      "mean_prob_std": 0.2269485873685335
+    }
+  },
+  "best_teacher_validation_setting": {
+    "mode": "raw_probability_teacher_tta",
+    "threshold": 0.65,
+    "min_area": 5,
+    "dice": 0.780087,
+    "iou": 0.639461,
+    "sensitivity": 0.793984,
+    "specificity": 0.998192,
+    "precision": 0.766668,
+    "accuracy": 0.996676,
+    "mae": 0.003324
+  },
+  "notes": [
+    "Teacher probabilities were generated using 4-flip test-time augmentation.",
+    "Strict lung constraint is disabled for this dataset.",
+    "Probability .npy files are local/regenerable and are not pushed to GitHub.",
+    "The inventory CSV is synced and can be used for CASR-Net training in the same Kaggle session."
+  ]
+}
