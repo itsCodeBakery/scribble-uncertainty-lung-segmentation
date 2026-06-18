@@ -1,0 +1,1 @@
+Visual quality-control examples for the COVID-19 CT lesion segmentation dataset preprocessing. Columns show CT frame, lesion mask, estimated lung mask, sparse scribble annotation, and CT frame with lesion mask overlay.

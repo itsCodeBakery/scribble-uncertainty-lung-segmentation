@@ -1,0 +1,6 @@
+filename,source,case_id,slice_idx,lesion_pixels,lung_pixels,scribble_fg_pixels,scribble_bg_pixels
+bjorke_61.png,bjorke,bjorke,61,18398,23287,3827,300
+Jun_coronacases_case9_123.png,Jun,Jun_coronacases_case9,123,1214,47898,240,273
+Jun_radiopaedia_10_85902_3_case12_101.png,Jun,Jun_radiopaedia_10_85902_3_case12,101,562,52049,107,152
+Jun_coronacases_case2_58.png,Jun,Jun_coronacases_case2,58,253,47881,39,138
+Jun_coronacases_case8_242.png,Jun,Jun_coronacases_case8,242,51,32235,5,79

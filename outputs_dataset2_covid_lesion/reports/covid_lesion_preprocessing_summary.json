@@ -1,0 +1,24 @@
+{
+  "dataset": "COVID-19 CT scan lesion segmentation dataset",
+  "num_pairs": 2729,
+  "num_cases": 71,
+  "train_cases": 49,
+  "val_cases": 10,
+  "test_cases": 12,
+  "train_slices": 1479,
+  "val_slices": 441,
+  "test_slices": 809,
+  "target_size": 256,
+  "source_counts": {
+    "Jun": 1844,
+    "Morozov": 785,
+    "bjorke": 100
+  },
+  "notes": [
+    "PNG frames and masks were converted to normalized 2D arrays.",
+    "Masks were binarized so all lesion types map to foreground.",
+    "Sparse scribbles were generated from full masks for weak-supervision simulation.",
+    "Approximate lung masks were estimated from frame intensity.",
+    "Splits are case-level to reduce leakage."
+  ]
+}
