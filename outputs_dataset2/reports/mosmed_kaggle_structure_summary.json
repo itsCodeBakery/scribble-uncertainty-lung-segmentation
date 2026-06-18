@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-06-18 05:57:39",
+  "total_files": 1166,
+  "dataset_roots": {
+    "/kaggle/input/datasets": 1166
+  },
+  "suffix_counts": {
+    ".nii": 1160,
+    ".pdf": 2,
+    ".md": 2,
+    ".xlsx": 1,
+    "": 1
+  },
+  "top_folders": [
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-1",
+      "file_count": 684,
+      "suffixes": ".nii",
+      "total_size_mb": 14112.205
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-0",
+      "file_count": 254,
+      "suffixes": ".nii",
+      "total_size_mb": 5545.576
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-2",
+      "file_count": 125,
+      "suffixes": ".nii",
+      "total_size_mb": 2589.538
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/masks",
+      "file_count": 50,
+      "suffixes": ".nii",
+      "total_size_mb": 1024.515
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-3",
+      "file_count": 45,
+      "suffixes": ".nii",
+      "total_size_mb": 919.514
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0",
+      "file_count": 6,
+      "suffixes": ", .md, .pdf, .xlsx",
+      "total_size_mb": 0.643
+    },
+    {
+      "folder": "/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-4",
+      "file_count": 2,
+      "suffixes": ".nii",
+      "total_size_mb": 39.001
+    }
+  ],
+  "notes": [
+    "This is only an inspection step.",
+    "Do not train before confirming image and mask folders.",
+    "Dataset-2 outputs are separated under outputs_dataset2/.",
+    "Dataset-1 outputs remain frozen under outputs/."
+  ]
+}
