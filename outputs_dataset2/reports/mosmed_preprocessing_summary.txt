@@ -1,0 +1,24 @@
+MosMedData preprocessing summary
+========================================
+
+created_at: 2026-06-18 06:01:18
+dataset: MosMedData Kaggle
+num_volume_mask_pairs: 50
+num_preprocessed_slices: 1142
+num_cases: 50
+train_cases: 35
+val_cases: 7
+test_cases: 8
+train_slices: 812
+val_slices: 147
+test_slices: 183
+target_size: 256
+context_radius: 2
+min_lesion_pixels: 20
+
+Notes:
+- NIfTI volumes were converted to 2D slices.
+- Only lesion-containing slices and nearby context slices were saved.
+- Lung masks were estimated from CT intensity and should be treated as approximate constraints.
+- Scribbles were generated from full masks for weak-supervision simulation.
+- Splits are case-level to avoid slice leakage.
