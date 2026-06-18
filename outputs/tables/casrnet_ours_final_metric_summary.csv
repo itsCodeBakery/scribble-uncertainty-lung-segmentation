@@ -1,0 +1,2 @@
+Method,Dice Index (DI),Jaccard Index (JA),Sensitivity (SE),Specificity (SP),Precision,MAE,HD95,ASSD,Threshold,Evaluated Slices
+CASR-Net (Ours),0.338,0.2604,0.2959,0.9993,0.4519,0.0037,24.0068,6.8505,0.035,727
