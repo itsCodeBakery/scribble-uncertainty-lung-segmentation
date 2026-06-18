@@ -1,0 +1,20 @@
+MosMedData teacher probability generation summary
+============================================================
+Teacher checkpoint: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs_dataset2/checkpoints/mosmed_teacher_unetpp_effb0_25d_highsens/best_model.pth
+Prediction directory: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs_dataset2/predictions/mosmed_teacher_highsens_tta_probabilities
+Total probability maps: 1142
+
+train: 812 probability maps | mean prob max=0.8184 | mean prob mean=0.009146
+val: 147 probability maps | mean prob max=0.8267 | mean prob mean=0.005488
+test: 183 probability maps | mean prob max=0.7931 | mean prob mean=0.006500
+
+Best validation setting discovered earlier:
+mode = lung_constrained_probability_highsens_tta
+threshold = 0.78
+min_area = 5
+validation Dice = 0.536388
+IoU = 0.366483
+Sensitivity = 0.493726
+Precision = 0.587121
+
+Note: Probability .npy files are local/regenerable and are not pushed to GitHub.
