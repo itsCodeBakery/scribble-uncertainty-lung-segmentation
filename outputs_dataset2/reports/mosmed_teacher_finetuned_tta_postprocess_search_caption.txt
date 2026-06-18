@@ -1,0 +1,1 @@
+TTA threshold and connected-component post-processing search for the fine-tuned MosMedData teacher model. The search evaluates raw and lung-constrained probabilities across thresholds and minimum connected-component areas.
