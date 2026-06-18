@@ -1,0 +1,1 @@
+Validation threshold and connected-component post-processing search for the fully supervised COVID lesion teacher model trained on the clean case-level split.
