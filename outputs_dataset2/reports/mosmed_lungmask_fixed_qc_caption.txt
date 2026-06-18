@@ -1,0 +1,1 @@
+Visual quality-control examples after correcting the estimated lung masks for MosMedData. Columns show the CT slice, infection mask, corrected lung mask overlay, sparse scribble annotation, and CT slice with infection mask overlay.
