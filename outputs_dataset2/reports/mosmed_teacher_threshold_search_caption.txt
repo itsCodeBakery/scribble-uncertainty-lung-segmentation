@@ -1,0 +1,1 @@
+Threshold search for the MosMedData full-supervised teacher model. The best validation Dice is selected over thresholds from 0.01 to 0.80 using lung-constrained prediction probabilities.
