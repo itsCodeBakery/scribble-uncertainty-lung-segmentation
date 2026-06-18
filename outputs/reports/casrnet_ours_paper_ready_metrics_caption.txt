@@ -1,0 +1,1 @@
+Final quantitative performance of the proposed CASR-Net method. DI, JA, SE, SP, HD95, and ASSD denote Dice Index, Jaccard Index, sensitivity, specificity, 95th percentile Hausdorff distance, and average symmetric surface distance, respectively.
