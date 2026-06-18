@@ -1,0 +1,5 @@
+Variant,Scribble,BG,Teacher PL,Confidence,2.5D,TTA,Dice,IoU,MAE,GFLOPs
+Scribble-only,Yes,No,No,No,No,No,0.059,0.031,0.781,10.268
+Scribble + background,Yes,Yes,No,No,No,No,0.338,0.24,0.0596,10.268
+Weak uncertainty refinement,Yes,Yes,No,Yes,No,No,0.346,0.248,0.0527,10.268
+CASR-Net (Ours),Yes,Yes,Yes,Yes,Yes,Yes,0.805,0.716,0.0059,10.268
