@@ -1,0 +1,1 @@
+Validation threshold and connected-component post-processing search for the COVID lesion teacher-initialized CASR-Net student trained using sparse scribbles, teacher confidence, and soft teacher consistency without strict lung masking.
