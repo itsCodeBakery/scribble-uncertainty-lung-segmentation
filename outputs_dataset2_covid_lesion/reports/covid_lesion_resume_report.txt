@@ -1,0 +1,22 @@
+COVID lesion experiment resume report
+============================================================
+Branch: dataset-2-experiments
+Latest commit: 90421edb Generate COVID lesion teacher probability inventory
+
+Processed images: 2729
+Processed masks: 2729
+Processed scribbles: 2729
+Teacher probability maps: 2729
+
+Teacher checkpoint exists: True
+Train CSV exists: True
+Val CSV exists: True
+Test CSV exists: True
+External CSV exists: True
+
+Resume ready: True
+
+Next experiment:
+1. Train scribble-only baseline
+2. Train scribble + background baseline
+3. Train CASR-Net student
