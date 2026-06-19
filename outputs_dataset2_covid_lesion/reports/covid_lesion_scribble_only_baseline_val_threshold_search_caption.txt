@@ -1,0 +1,1 @@
+Validation threshold and connected-component post-processing search for the COVID lesion scribble-only weak-supervision baseline.
