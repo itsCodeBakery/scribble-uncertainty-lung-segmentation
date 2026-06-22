@@ -1,0 +1,2 @@
+method,mode,threshold,min_area,dice,iou,sensitivity,specificity,precision,accuracy,mae,tp,tn,fp,fn,source
+Scribble-only,raw_probability_scribble_only_tta,0.95,200,0.138689,0.074511,0.995159,0.907566,0.074538,0.908216,0.091784,200007,24382114,2483274,973,recovered_from_completed_experiment_log

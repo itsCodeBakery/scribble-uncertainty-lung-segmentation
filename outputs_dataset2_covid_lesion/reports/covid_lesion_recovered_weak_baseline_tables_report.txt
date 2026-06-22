@@ -1,0 +1,48 @@
+Recovered weak-baseline best-result tables for COVID lesion Dataset-2.
+
+Reason:
+The GitHub-loaded repository contained teacher and CASR-Net result files, but the scribble-only
+and scribble+background best-threshold CSV files were missing. The best weak-baseline rows were
+reconstructed from the previously completed experiment outputs.
+
+Recovered values:
+
+Scribble-only:
+Dice = 0.138689
+IoU = 0.074511
+Sensitivity = 0.995159
+Specificity = 0.907566
+Precision = 0.074538
+Threshold = 0.95
+min_area = 200
+
+Scribble + background:
+Dice = 0.576924
+IoU = 0.405407
+Sensitivity = 0.485013
+Specificity = 0.998531
+Precision = 0.711814
+Threshold = 0.95
+min_area = 75
+
+Teacher:
+Dice = 0.7800870647069992
+
+CASR-Net:
+Dice = 0.7879441402719887
+
+CASR-Net gain over teacher:
++0.007857
+
+CASR-Net gain over scribble + background:
++0.211020
+
+Generated files:
+- outputs_dataset2_covid_lesion/tables/covid_lesion_scribble_only_best_val_threshold.csv
+- outputs_dataset2_covid_lesion/tables/covid_lesion_scribble_background_best_val_threshold.csv
+- outputs_dataset2_covid_lesion/metrics/covid_lesion_scribble_only_val_threshold_search_recovered_best_only.csv
+- outputs_dataset2_covid_lesion/metrics/covid_lesion_scribble_background_val_threshold_search_recovered_best_only.csv
+- outputs_dataset2_covid_lesion/tables/covid_lesion_final_method_comparison_val.csv
+- outputs_dataset2_covid_lesion/tables/covid_lesion_final_method_comparison_val.tex
+- outputs_dataset2_covid_lesion/figures/covid_lesion_final_method_comparison_val.png
+- outputs_dataset2_covid_lesion/figures/covid_lesion_final_method_comparison_val.pdf

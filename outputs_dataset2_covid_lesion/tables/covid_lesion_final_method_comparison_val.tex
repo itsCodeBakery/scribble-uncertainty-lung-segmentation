@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Validation comparison of weak-supervision baselines, fully supervised teacher, and the proposed CASR-Net on the COVID lesion dataset.}
+\label{tab:covid_lesion_final_comparison}
+\begin{tabular}{lrrrrrrr}
+\toprule
+method & dice & iou & sensitivity & specificity & precision & accuracy & mae \\
+\midrule
+Scribble-only & 0.138700 & 0.074500 & 0.995200 & 0.907600 & 0.074500 & 0.908200 & 0.091800 \\
+Scribble + background & 0.576900 & 0.405400 & 0.485000 & 0.998500 & 0.711800 & 0.994700 & 0.005300 \\
+Fully supervised teacher & 0.780100 & 0.639500 & 0.794000 & 0.998200 & 0.766700 & 0.996700 & 0.003300 \\
+CASR-Net (Ours) & 0.787900 & 0.650100 & 0.774400 & 0.998600 & 0.801900 & 0.996900 & 0.003100 \\
+\bottomrule
+\end{tabular}
+\end{table}
