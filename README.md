@@ -315,4 +315,3 @@ This repository was developed for research on annotation-efficient lung lesion s
 
 
 
-Then update the image path in this README accordingly.
