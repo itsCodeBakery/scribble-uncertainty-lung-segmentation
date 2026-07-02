@@ -212,3 +212,119 @@ scribble-uncertainty-lung-segmentation/
 ├── notebooks/
 ├── requirements.txt
 └── README.md
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation.git
+cd scribble-uncertainty-lung-segmentation
+```
+
+Create and activate a Python environment:
+
+```bash
+python -m venv casrnet_env
+source casrnet_env/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+The repository contains scripts and outputs for preprocessing, scribble generation, teacher training, student refinement, evaluation, and figure generation.
+
+A typical workflow is:
+
+```text
+1. Prepare CT images and dense lesion masks.
+2. Generate sparse foreground/background scribble annotations.
+3. Train the fully supervised teacher model.
+4. Generate teacher probability maps.
+5. Train CASR-Net using scribbles, confidence-selected pseudo labels, and teacher consistency.
+6. Evaluate the trained student model.
+7. Generate qualitative figures and tables.
+```
+
+---
+
+## Evaluation Metrics
+
+The following metrics are used for segmentation evaluation:
+
+- Dice Index
+- Intersection over Union
+- Sensitivity
+- Specificity
+- Precision
+- Accuracy
+- Mean Absolute Error
+- Boundary Dice
+- HD95
+- ASSD
+
+---
+
+## Paper Title
+
+**CASR-Net: Confidence-Aware Scribble Refinement for Weakly Supervised Lung Lesion Segmentation in Chest CT**
+
+---
+
+## Code Availability
+
+The source code is available at:
+
+```text
+https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation
+```
+
+---
+
+## Citation
+
+If you use this repository or find the work helpful, please cite:
+
+```bibtex
+@misc{casrnet2026,
+  title  = {CASR-Net: Confidence-Aware Scribble Refinement for Weakly Supervised Lung Lesion Segmentation in Chest CT},
+  author = {Syed Shayan Ali Shah},
+  year   = {2026},
+  note   = {GitHub repository},
+  url    = {https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation}
+}
+```
+
+---
+
+## Acknowledgment
+
+This repository was developed for research on annotation-efficient lung lesion segmentation using weak scribble supervision and confidence-aware pseudo-label refinement.
+
+---
+
+## Note
+
+For a more professional repository, consider renaming:
+
+```text
+teacher_assisted_pseudo_label_examples_strict_sexy.png
+```
+
+to:
+
+```text
+teacher_assisted_pseudo_label_examples_strict.png
+```
+
+Then update the image path in this README accordingly.
