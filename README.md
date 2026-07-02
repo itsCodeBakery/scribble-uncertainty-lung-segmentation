@@ -313,18 +313,6 @@ This repository was developed for research on annotation-efficient lung lesion s
 
 ---
 
-## Note
 
-For a more professional repository, consider renaming:
-
-```text
-teacher_assisted_pseudo_label_examples_strict_sexy.png
-```
-
-to:
-
-```text
-teacher_assisted_pseudo_label_examples_strict.png
-```
 
 Then update the image path in this README accordingly.
