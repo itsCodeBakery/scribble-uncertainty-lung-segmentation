@@ -1,0 +1,16 @@
+{
+  "branch": "dataset-2-experiments",
+  "latest_commit": "90421edb Generate COVID lesion teacher probability inventory",
+  "processed_images": 2729,
+  "processed_masks": 2729,
+  "processed_scribbles": 2729,
+  "teacher_probability_maps": 2729,
+  "expected_total_slices": 2729,
+  "expected_probability_maps": 2729,
+  "teacher_checkpoint_exists": true,
+  "train_csv_exists": true,
+  "val_csv_exists": true,
+  "test_csv_exists": true,
+  "external_csv_exists": true,
+  "resume_ready": true
+}

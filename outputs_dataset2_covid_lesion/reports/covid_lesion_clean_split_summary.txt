@@ -1,0 +1,43 @@
+COVID lesion clean split summary
+============================================================
+Total preprocessed slices: 2729
+Total cases: 71
+
+Main dataset: Jun + Morozov
+  Slices: 2629
+  Cases: 70
+
+External dataset: bjorke
+  Slices: 100
+  Cases: 1
+
+Clean case-level split:
+  Train: 49 cases / 1864 slices
+  Val:   11 cases / 413 slices
+  Test:  10 cases / 352 slices
+  External bjorke: 1 cases / 100 slices
+
+Slice source distribution:
+  external_test / bjorke: 100 slices
+  test / Jun: 269 slices
+  test / Morozov: 83 slices
+  train / Jun: 1278 slices
+  train / Morozov: 586 slices
+  val / Jun: 297 slices
+  val / Morozov: 116 slices
+
+Case source distribution:
+  external_test / bjorke: 1 cases
+  test / Jun: 3 cases
+  test / Morozov: 7 cases
+  train / Jun: 14 cases
+  train / Morozov: 35 cases
+  val / Jun: 3 cases
+  val / Morozov: 8 cases
+
+Configuration decision:
+  strict_lung_constraint = False
+  Reason: estimated lung masks are not sufficiently reliable in QC.
+
+Next step:
+  Train fully supervised teacher on train_slices_clean.csv and validate on val_slices_clean.csv.

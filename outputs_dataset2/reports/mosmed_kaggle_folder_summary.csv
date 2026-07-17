@@ -1,0 +1,8 @@
+folder,file_count,suffixes,total_size_mb
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-1,684,.nii,14112.205
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-0,254,.nii,5545.576
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-2,125,.nii,2589.538
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/masks,50,.nii,1024.515
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-3,45,.nii,919.514
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0,6,", .md, .pdf, .xlsx",0.643
+/kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-4,2,.nii,39.001

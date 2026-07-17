@@ -1,0 +1,89 @@
+{
+  "total_preprocessed_slices": 2729,
+  "total_cases": 71,
+  "main_slices_jun_morozov": 2629,
+  "main_cases_jun_morozov": 70,
+  "external_slices_bjorke": 100,
+  "external_cases_bjorke": 1,
+  "train_cases": 49,
+  "train_slices": 1864,
+  "val_cases": 11,
+  "val_slices": 413,
+  "test_cases": 10,
+  "test_slices": 352,
+  "strict_lung_constraint": false,
+  "source_distribution_slices": [
+    {
+      "split_clean": "external_test",
+      "source": "bjorke",
+      "n_slices": 100
+    },
+    {
+      "split_clean": "test",
+      "source": "Jun",
+      "n_slices": 269
+    },
+    {
+      "split_clean": "test",
+      "source": "Morozov",
+      "n_slices": 83
+    },
+    {
+      "split_clean": "train",
+      "source": "Jun",
+      "n_slices": 1278
+    },
+    {
+      "split_clean": "train",
+      "source": "Morozov",
+      "n_slices": 586
+    },
+    {
+      "split_clean": "val",
+      "source": "Jun",
+      "n_slices": 297
+    },
+    {
+      "split_clean": "val",
+      "source": "Morozov",
+      "n_slices": 116
+    }
+  ],
+  "source_distribution_cases": [
+    {
+      "split_clean": "external_test",
+      "source": "bjorke",
+      "n_cases": 1
+    },
+    {
+      "split_clean": "test",
+      "source": "Jun",
+      "n_cases": 3
+    },
+    {
+      "split_clean": "test",
+      "source": "Morozov",
+      "n_cases": 7
+    },
+    {
+      "split_clean": "train",
+      "source": "Jun",
+      "n_cases": 14
+    },
+    {
+      "split_clean": "train",
+      "source": "Morozov",
+      "n_cases": 35
+    },
+    {
+      "split_clean": "val",
+      "source": "Jun",
+      "n_cases": 3
+    },
+    {
+      "split_clean": "val",
+      "source": "Morozov",
+      "n_cases": 8
+    }
+  ]
+}

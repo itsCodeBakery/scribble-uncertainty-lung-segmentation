@@ -1,0 +1,24 @@
+MosMedData Kaggle Structure Summary
+=============================================
+
+Created at: 2026-06-18 08:01:28
+Total files: 1166
+
+Dataset roots:
+- /kaggle/input/datasets: 1166 files
+
+Suffix counts:
+- .nii: 1160
+- .pdf: 2
+- .md: 2
+- .xlsx: 1
+- : 1
+
+Top folders:
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-1 | files=684 | suffixes=.nii | size=14112.205 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-0 | files=254 | suffixes=.nii | size=5545.576 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-2 | files=125 | suffixes=.nii | size=2589.538 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/masks | files=50 | suffixes=.nii | size=1024.515 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-3 | files=45 | suffixes=.nii | size=919.514 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0 | files=6 | suffixes=, .md, .pdf, .xlsx | size=0.643 MB
+- /kaggle/input/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19/MosMedData Chest CT Scans with COVID-19 Related Findings COVID19_1110 1.0/studies/CT-4 | files=2 | suffixes=.nii | size=39.001 MB

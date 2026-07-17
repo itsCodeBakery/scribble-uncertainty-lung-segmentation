@@ -1,0 +1,21 @@
+COVID lesion teacher probability generation summary
+======================================================================
+Teacher checkpoint: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs_dataset2_covid_lesion/checkpoints/covid_lesion_teacher_unetpp_effb0/best_model.pth
+Prediction directory: /kaggle/working/scribble-uncertainty-lung-segmentation/outputs_dataset2_covid_lesion/predictions/covid_lesion_teacher_tta_probabilities
+Total probability maps: 2729
+
+train: 1864 maps | mean prob max=0.9950 | mean prob mean=0.016986 | mean prob std=0.102866
+val: 413 maps | mean prob max=0.9701 | mean prob mean=0.008653 | mean prob std=0.076079
+test: 352 maps | mean prob max=0.9782 | mean prob mean=0.010836 | mean prob std=0.083438
+external_test: 100 maps | mean prob max=0.9902 | mean prob mean=0.081121 | mean prob std=0.226949
+
+Best teacher validation setting:
+mode = raw_probability_teacher_tta
+threshold = 0.65
+min_area = 5
+Dice = 0.780087
+IoU = 0.639461
+Sensitivity = 0.793984
+Precision = 0.766668
+
+Note: Probability .npy files are local/regenerable and are not pushed to GitHub.

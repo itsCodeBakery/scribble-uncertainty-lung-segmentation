@@ -1,0 +1,23 @@
+{
+  "dataset_name": "COVID-19 CT scan lesion segmentation dataset",
+  "dataset_folder": "data/dataset2_covid_lesion",
+  "outputs_folder": "outputs_dataset2_covid_lesion",
+  "split_strategy": "source-aware case-level split",
+  "main_sources": [
+    "Jun",
+    "Morozov"
+  ],
+  "external_source": "bjorke",
+  "train_csv": "data/dataset2_covid_lesion/splits/train_slices_clean.csv",
+  "val_csv": "data/dataset2_covid_lesion/splits/val_slices_clean.csv",
+  "test_csv": "data/dataset2_covid_lesion/splits/test_slices_clean.csv",
+  "external_test_csv": "data/dataset2_covid_lesion/splits/external_test_slices_bjorke.csv",
+  "target_size": 256,
+  "strict_lung_constraint": false,
+  "reason_for_no_strict_lung_constraint": "The estimated lung masks are not sufficiently reliable in QC; therefore, CASR-Net will use scribbles and teacher confidence without strict anatomical masking.",
+  "recommended_training": {
+    "teacher": "fully supervised UNet++ EfficientNet-B0 using full lesion masks",
+    "student": "CASR-Net using sparse scribbles and teacher confidence",
+    "evaluation": "full lesion masks on val/test/external_test"
+  }
+}

@@ -1,0 +1,20 @@
+COVID lesion preprocessing summary
+============================================================
+Pairs: 2729
+Cases: 71
+Train cases/slices: 49 / 1479
+Val cases/slices: 10 / 441
+Test cases/slices: 12 / 809
+Target size: 256
+
+Source counts:
+  Jun: 1844
+  Morozov: 785
+  bjorke: 100
+
+Notes:
+- PNG frames and masks were converted to normalized 2D arrays.
+- Masks were binarized so all lesion types map to foreground.
+- Sparse scribbles were generated from full masks for weak-supervision simulation.
+- Approximate lung masks were estimated from frame intensity.
+- Splits are case-level to reduce leakage.

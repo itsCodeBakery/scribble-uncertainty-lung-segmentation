@@ -1,0 +1,39 @@
+COVID-19 CT scan lesion segmentation dataset inspection
+======================================================================
+Total files found: 6624
+Frame files found: 2729
+Mask files found: 2729
+Matched image-mask pairs: 2729
+Unique cases: 71
+
+Source counts:
+  Jun: 1844
+  Morozov: 785
+  bjorke: 100
+
+Top cases:
+  Jun_coronacases_case8: 216
+  Jun_coronacases_case10: 191
+  Jun_coronacases_case1: 161
+  Jun_radiopaedia_10_85902_3_case12: 148
+  Jun_coronacases_case2: 143
+  Jun_coronacases_case3: 137
+  Jun_coronacases_case5: 116
+  Jun_coronacases_case4: 113
+  Jun_coronacases_case9: 111
+  Jun_radiopaedia_14_85914_0_case13: 103
+  bjorke: 100
+  Jun_coronacases_case7: 93
+  Jun_radiopaedia_40_86625_0_case18: 72
+  Jun_coronacases_case6: 70
+  Jun_radiopaedia_27_86410_0_case14: 44
+  Jun_radiopaedia_7_85703_0_case20: 41
+  Morozov_study_0297: 36
+  Jun_radiopaedia_36_86526_0_case17: 34
+  Jun_radiopaedia_4_85506_1_case19: 26
+  Morozov_study_0289: 25
+
+Notes:
+- This inspection only creates metadata reports.
+- No image/mask data are pushed to GitHub.
+- Case-level splitting will be required to avoid leakage.

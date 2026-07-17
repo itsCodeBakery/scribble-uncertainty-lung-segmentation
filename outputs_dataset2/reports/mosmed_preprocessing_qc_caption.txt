@@ -1,0 +1,1 @@
+Visual quality-control examples for MosMedData preprocessing. Columns show the CT slice, infection mask, estimated lung mask, sparse scribble annotation, and CT slice with infection mask overlay. This figure is used to verify the dataset-2 preprocessing before training.

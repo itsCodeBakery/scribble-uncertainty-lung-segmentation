@@ -1,0 +1,1 @@
+Threshold search for the fine-tuned MosMedData teacher model. Both raw probability and lung-constrained probability modes are evaluated, and the best validation Dice is selected across thresholds.
