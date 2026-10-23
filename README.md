@@ -23,13 +23,13 @@ The original studies use **distinct datasets and partitions**. Do not merge thei
 
 | Experiment group | Kaggle dataset | Recorded partition | Branch / outputs |
 |---|---|---|---|
-| Original volumetric COVID-19 CT scans | [andrewmvd/covid19-ct-scans](https://www.kaggle.com/datasets/andrewmvd/covid19-ct-scans) | 18 cases; 2,858 retained slices; train 12 cases / 1,938 slices, validation 2 / 193, test 4 / 727 | \`main\`; \`data/splits/\`, \`outputs/\` |
-| COVID-19 CT lesion segmentation collection | [maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset](https://www.kaggle.com/datasets/maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset) | 71 cases / 2,729 image–mask pairs; clean partition: train 49 / 1,864, validation 11 / 413, test 10 / 352, external 1 / 100 | \`dataset-2-experiments\`; \`data/dataset2_covid_lesion/\`, \`outputs_dataset2_covid_lesion/\` |
-| MosMedData CT volumes | [mathurinache/mosmeddata-chest-ct-scans-with-covid19](https://www.kaggle.com/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19) | An annotated subset; refer to the saved split CSVs for exact eligibility and partition size | \`dataset-2-experiments\`; \`data/dataset2_mosmed/\`, \`outputs_dataset2/\` |
+| Original volumetric COVID-19 CT scans | [andrewmvd/covid19-ct-scans](https://www.kaggle.com/datasets/andrewmvd/covid19-ct-scans) | 18 cases; 2,858 retained slices; train 12 cases / 1,938 slices, validation 2 / 193, test 4 / 727 | `main`; `data/splits/`, `outputs/` |
+| COVID-19 CT lesion segmentation collection | [maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset](https://www.kaggle.com/datasets/maedemaftouni/covid19-ct-scan-lesion-segmentation-dataset) | 71 cases / 2,729 image–mask pairs; clean partition: train 49 / 1,864, validation 11 / 413, test 10 / 352, external 1 / 100 | `dataset-2-experiments`; `data/dataset2_covid_lesion/`, `outputs_dataset2_covid_lesion/` |
+| MosMedData CT volumes | [mathurinache/mosmeddata-chest-ct-scans-with-covid19](https://www.kaggle.com/datasets/mathurinache/mosmeddata-chest-ct-scans-with-covid19) | An annotated subset; refer to the saved split CSVs for exact eligibility and partition size | `dataset-2-experiments`; `data/dataset2_mosmed/`, `outputs_dataset2/` |
 
 The original 18-case configuration clips CT intensities to **[-1000, 400] HU** and resizes to **256 × 256**. The 71-case collection uses PNG image/mask pairs with its own preprocessing protocol and *does not use strict lung-mask restriction in its clean-split configuration*. These are separate protocols, not interchangeable implementations.
 
-**Original protocol sources:** \`configs/preprocessing_config.json\`, \`configs/tta_postprocessing_config.json\`, \`data/splits/*.csv\`, and the per-dataset summaries under \`outputs_dataset2*/reports/\` on the \`dataset-2-experiments\` branch.
+**Original protocol sources:** `configs/preprocessing_config.json`, `configs/tta_postprocessing_config.json`, `data/splits/*.csv`, and the per-dataset summaries under `outputs_dataset2*/reports/` on the `dataset-2-experiments` branch.
 
 ## Existing results and artifacts
 
@@ -41,17 +41,17 @@ The current research work is reconstructing the scoring and model-provenance cha
 
 | Visual evidence | Repository path |
 |---|---|
-| CT and simulated scribble examples | \`outputs/figures/dataset/\` |
-| Confidence-selected pseudo-label examples | \`outputs/figures/results/uncertainty_guided_pseudo_label_examples.png\` |
-| Teacher-guided pseudo-label examples | \`outputs/figures/results/teacher_assisted_pseudo_label_examples_strict.png\` |
-| TTA-based qualitative predictions | \`outputs/figures/results/tta_optimized_qualitative_predictions.png\` |
-| Lesion-focused Grad-CAM | \`outputs/figures/results/casrnet_lesion_targeted_gradcam_visualization_no_dice.png\` |
+| CT and simulated scribble examples | `outputs/figures/dataset/` |
+| Confidence-selected pseudo-label examples | `outputs/figures/results/uncertainty_guided_pseudo_label_examples.png` |
+| Teacher-guided pseudo-label examples | `outputs/figures/results/teacher_assisted_pseudo_label_examples_strict.png` |
+| TTA-based qualitative predictions | `outputs/figures/results/tta_optimized_qualitative_predictions.png` |
+| Lesion-focused Grad-CAM | `outputs/figures/results/casrnet_lesion_targeted_gradcam_visualization_no_dice.png` |
 
 These historical figures do **not** by themselves establish a matched multi-model qualitative comparison.
 
 ## Reproducible qualitative-comparison study
 
-Development branch: **[\`casrnet-qualitative-comparison-2026\`](https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation/tree/casrnet-qualitative-comparison-2026)**.
+Development branch: **[`casrnet-qualitative-comparison-2026`](https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation/tree/casrnet-qualitative-comparison-2026)**.
 
 The planned outputs are:
 
@@ -69,18 +69,18 @@ For each compared method, preserve: source implementation/architecture citation,
 1. Create a Python Kaggle notebook with a GPU and enable Internet access if available.
 2. Attach the datasets listed above using **Add Input → Datasets**.
 3. Clone this public repository:
-   \`\`\`bash
+   ```bash
    git clone --branch casrnet-qualitative-comparison-2026 \
      https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation.git
-   \`\`\`
+   ```
 4. Run the initial dataset/checkpoint audit. Do not begin training until split coverage and usable checkpoints have been identified.
-5. When ready to push from Kaggle, add a scoped GitHub personal access token as a **Kaggle Secret** (for example \`GITHUB_TOKEN\`); never paste a token into notebook source or output.
+5. When ready to push from Kaggle, add a scoped GitHub personal access token as a **Kaggle Secret** (for example `GITHUB_TOKEN`); never paste a token into notebook source or output.
 
-Kaggle notebooks already supply many common scientific packages. See \`requirements.txt\` for the repository's baseline dependency list.
+Kaggle notebooks already supply many common scientific packages. See `requirements.txt` for the repository's baseline dependency list.
 
 ## Repository organization
 
-\`\`\`text
+```text
 configs/                       Experiment-specific settings
 data/splits/                   Original 18-case split metadata
 outputs/                       Original metrics, figures, checkpoints
@@ -89,7 +89,7 @@ outputs_dataset2_covid_lesion/ COVID lesion experimental records (dataset-2 bran
 manuscript/                    Existing manuscript-related assets
 requirements.txt
 README.md
-\`\`\`
+```
 
 Some paths exist **only on the dataset-2 branch**. The public snapshot does not include a complete runnable set of original training notebooks/scripts, although older documentation referred to those folders. Restoration and validation are part of the reproducibility work.
 
@@ -101,7 +101,7 @@ Evaluate overlap with Dice and IoU; sensitivity, specificity and precision for f
 
 **Manuscript in preparation** — *CASR-Net: Confidence-Aware Teacher-Guided Scribble Refinement for Pulmonary Infection Segmentation in Chest CT*.
 
-\`\`\`bibtex
+```bibtex
 @misc{casrnet_repo_2026,
   author = {Syed Shayan Ali Shah},
   title = {CASR-Net: Confidence-Aware Teacher-Guided Scribble Refinement for Pulmonary Infection Segmentation in Chest CT},
@@ -109,7 +109,7 @@ Evaluate overlap with Dice and IoU; sensitivity, specificity and precision for f
   howpublished = {GitHub repository},
   url = {https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation}
 }
-\`\`\`
+```
 
 ### Ethics, licensing, and provenance
 
