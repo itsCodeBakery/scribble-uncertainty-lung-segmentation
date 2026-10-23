@@ -58,6 +58,8 @@ The planned outputs are:
 - **Figure A — Matched segmentation comparison:** identical held-out CT slices, reference infection masks, scribbles, and genuine predictions from U-Net, Attention U-Net, UNet++ teacher, scribble baselines, and CASR-Net.
 - **Figure B — Challenging-case analysis:** pre-specified median and difficult lesion-positive cases with per-slice metrics and consistent prediction overlays.
 
+**Qualitative comparison panels:** label the model **CASR-Net (Ours)** in displayed figures (not "Recovered"). Keep checkpoint identity and recovery provenance in the experiment manifest. For comparative error analysis, provide standard pixel categories **TP** (true positive), **FP** (false positive), **FN** (false negative), and **TN** (true negative); use consistent white/red/blue/black colors respectively. The first genuine UNet++ comparison uses three rows and six columns, retaining the boundary overlay plus the error map. This is a pilot, not a fully validated SOTA benchmark.
+
 **Publication-figure layout:** use **three rows per qualitative figure**, with a fixed set of case IDs, consistent method columns and color conventions. Keep the existing five-example reproducibility audit separate; the current three-case pilot is a presentation artifact from the recovered qualitative checkpoint, not the final 2.5-D result.
 
 For each compared method, preserve: source implementation/architecture citation, checkpoint identity and SHA-256, training split, preprocessing, model input dimensionality, threshold/postprocessing rule, per-case metrics, and raw probability/prediction masks. Baselines must be evaluated on the **same cases** before quantitative comparisons are drawn.
