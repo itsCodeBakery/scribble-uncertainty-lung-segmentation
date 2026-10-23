@@ -64,7 +64,7 @@ def token_from_kaggle():
     try:
         from kaggle_secrets import UserSecretsClient
         client = UserSecretsClient()
-        for name in ("pushLungs", "GITHUB_TOKEN"):
+        for name in ("pushCasr", "GITHUB_TOKEN"):
             try:
                 value = client.get_secret(name)
                 if isinstance(value, str) and value.strip():
@@ -135,8 +135,8 @@ def main():
     # Use the original output files, never a compressed chat screenshot.
     token = token_from_kaggle()
     if not token:
-        print("\nGitHub Kaggle Secret 'pushLungs' or 'GITHUB_TOKEN' is missing or inaccessible.")
-        print("Kaggle notebook: Add-ons > Secrets > enable existing 'pushLungs'.")
+        print("\nGitHub Kaggle Secret 'pushCasr' or 'GITHUB_TOKEN' is missing or inaccessible.")
+        print("Kaggle notebook: Add-ons > Secrets > enable existing 'pushCasr'.")
         print("Use a fine-grained token with Contents: Read and write permission")
         print("for only itsCodeBakery/scribble-uncertainty-lung-segmentation.")
         print("Enable the secret for this notebook and re-run Block 07.")
