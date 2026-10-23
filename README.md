@@ -58,6 +58,8 @@ The planned outputs are:
 - **Figure A — Matched segmentation comparison:** identical held-out CT slices, reference infection masks, scribbles, and genuine predictions from U-Net, Attention U-Net, UNet++ teacher, scribble baselines, and CASR-Net.
 - **Figure B — Challenging-case analysis:** pre-specified median and difficult lesion-positive cases with per-slice metrics and consistent prediction overlays.
 
+**Publication-figure layout:** use **three rows per qualitative figure**, with a fixed set of case IDs, consistent method columns and color conventions. Keep the existing five-example reproducibility audit separate; the current three-case pilot is a presentation artifact from the recovered qualitative checkpoint, not the final 2.5-D result.
+
 For each compared method, preserve: source implementation/architecture citation, checkpoint identity and SHA-256, training split, preprocessing, model input dimensionality, threshold/postprocessing rule, per-case metrics, and raw probability/prediction masks. Baselines must be evaluated on the **same cases** before quantitative comparisons are drawn.
 
 **Case selection rule:** select median and difficult cases using a documented, fixed metric and a common held-out split. Avoid subjective selection and do not alter masks for presentation.
