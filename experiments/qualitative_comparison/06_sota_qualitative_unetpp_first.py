@@ -109,6 +109,17 @@ def load_baseline(device):
 def readcsv(p):
     with p.open(newline="",encoding="utf-8") as f: return list(csv.DictReader(f))
 
+def confusion_counts(pred, gt):
+    """Mutually exclusive per-pixel confusion matrix on the 256x256 canvas."""
+    p = pred.astype(bool)
+    g = gt.astype(bool)
+    return {
+        "tp": int((p & g).sum()),
+        "fp": int((p & ~g).sum()),
+        "fn": int((~p & g).sum()),
+        "tn": int((~p & ~g).sum()),
+    }
+
 def performance(pred,gt):
     p=pred.astype(bool); y=gt.astype(bool)
     intersect=int((p&y).sum()); union=int((p|y).sum())
@@ -151,9 +162,9 @@ def main():
     assert recovered.get("status")=="ALL_MATCH","CASR source must be fully verified."
 
     OUT.mkdir(parents=True,exist_ok=True)
-    fig,axes=plt.subplots(3,5,figsize=(16.4,9.5))
-    titles=("CT Image","Reference Infection","UNet++ (2.5-D)","CASR-Net (Recovered)",
-            "Boundary Comparison")
+    fig,axes=plt.subplots(3,6,figsize=(19.2,9.6))
+    titles=("CT Image","Reference Infection","UNet++ (2.5-D)","CASR-Net (Ours)",
+            "Boundary Comparison","TP / FP / FN / TN")
     for j,t in enumerate(titles):
         axes[0,j].set_title(t,fontsize=11.5,fontweight="bold",pad=10)
     rows=[]
@@ -197,6 +208,22 @@ def main():
         axes[row_idx,2].imshow(baseline,cmap="gray",vmin=0,vmax=1)
         axes[row_idx,3].imshow(casr_pred,cmap="gray",vmin=0,vmax=1)
         axes[row_idx,4].imshow(image,cmap="gray",vmin=0,vmax=1)
+        # Prediction-level error map: TP white, FP red, FN blue, TN black.
+        cm_casr=confusion_counts(casr_pred,gt)
+        cm_base=confusion_counts(baseline,gt)
+        error_rgb=np.zeros((*gt.shape,3),dtype=np.float32)
+        error_rgb[casr_pred & gt]=(0.97,0.97,0.97)
+        error_rgb[casr_pred & ~gt]=(0.95,0.17,0.15)
+        error_rgb[~casr_pred & gt]=(0.19,0.45,0.96)
+        axes[row_idx,5].imshow(error_rgb,interpolation="nearest")
+        axes[row_idx,5].text(
+            0.5,0.035,
+            f"TP {cm_casr['tp']:,} | FP {cm_casr['fp']:,} | FN {cm_casr['fn']:,}",
+            transform=axes[row_idx,5].transAxes,
+            fontsize=8.0,fontweight="bold",color="white",
+            ha="center",va="bottom",
+            bbox={"facecolor":"black","alpha":0.80,"edgecolor":"none",
+                  "boxstyle":"round,pad=0.2"})
         for mask,color in ((gt,"lime"),(baseline,"cyan"),(casr_pred,"red")):
             if mask.any():
                 axes[row_idx,4].contour(mask.astype(np.float32),levels=[0.5],
@@ -221,14 +248,19 @@ def main():
                      "casr_recovered_dice":casr_d,"casr_recovered_iou":casr_j,
                      "unetpp_foreground_pixels":int(baseline.sum()),
                      "casr_foreground_pixels":int(casr_pred.sum()),
-                     "gt_foreground_pixels":int(gt.sum())})
+                     "gt_foreground_pixels":int(gt.sum()),
+                     "unetpp_tp":cm_base["tp"],"unetpp_fp":cm_base["fp"],
+                     "unetpp_fn":cm_base["fn"],"unetpp_tn":cm_base["tn"],
+                     "casr_tp":cm_casr["tp"],"casr_fp":cm_casr["fp"],
+                     "casr_fn":cm_casr["fn"],"casr_tn":cm_casr["tn"]})
         print(f"  {arr_name}: UNet++ Dice={base_d:.4f} vs CASR-Net Dice={casr_d:.4f}")
 
     fig.subplots_adjust(left=0.012,right=0.992,top=0.944,bottom=0.085,
                         wspace=0.025,hspace=0.11)
     fig.text(0.5,0.045,
-             "Boundary comparison: reference = green  |  UNet++ = cyan  |  CASR-Net = red",
-             fontsize=10.5,ha="center",va="center")
+             "Boundaries: reference = green  |  UNet++ = cyan  |  CASR-Net = red     "
+             "Errors: TP = white, FP = red, FN = blue, TN = black",
+             fontsize=10.0,ha="center",va="center")
     png=OUT/"SOTA_Pilot_UNetPP_vs_CASRNet_ThreeRows.png"
     pdf=OUT/"SOTA_Pilot_UNetPP_vs_CASRNet_ThreeRows.pdf"
     fig.savefig(png,dpi=300,facecolor="white")
@@ -258,12 +290,13 @@ def main():
     }
     (OUT/"comparison_manifest.json").write_text(json.dumps(report,indent=2)+"\n")
     caption=("Matched pulmonary infection segmentation examples on three held-out chest CT "
-             "slices, using a saved fully supervised 2.5-D UNet++ EfficientNet-B0 "
-             "checkpoint and a separately recovered CASR-Net student. Boundaries show "
-             "the reference (green), UNet++ (cyan), and CASR-Net (red). Per-slice Dice "
-             "is annotated. Pilot comparison: baseline threshold 0.5 is not "
-             "validation-optimized, and the recovered CASR-Net checkpoint is not "
-             "the identified final 2.5-D quantitative model.")
+             "slices using UNet++ EfficientNet-B0 and CASR-Net. Boundary overlays "
+             "show the reference (green), UNet++ (cyan), and CASR-Net (red). The error "
+             "maps display CASR-Net true positives (TP, white), false positives "
+             "(FP, red), false negatives (FN, blue), and true negatives (TN, black). "
+             "Dice is reported for each slice. This is a preliminary comparison "
+             "using the checkpoints and fixed thresholds documented in the "
+             "reproducibility manifest.")
     (OUT/"Figure_Caption.txt").write_text(caption+"\n")
     print("\n✓ Real UNet++ predictions generated on the SAME three CT slices as CASR-Net")
     print("PNG:",png)
