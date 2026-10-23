@@ -60,12 +60,20 @@ def sha256(path):
     return h.hexdigest()
 
 def token_from_kaggle():
+    """Read configured Kaggle Secrets without printing or persisting credentials."""
     try:
         from kaggle_secrets import UserSecretsClient
-        v = UserSecretsClient().get_secret("GITHUB_TOKEN")
+        client = UserSecretsClient()
+        for name in ("pushLungs", "GITHUB_TOKEN"):
+            try:
+                value = client.get_secret(name)
+                if isinstance(value, str) and value.strip():
+                    return value.strip()
+            except Exception:
+                continue
     except Exception:
-        v = None
-    return v.strip() if isinstance(v, str) and v.strip() else None
+        pass
+    return None
 
 def verify_source():
     head, _ = git("branch", "--show-current")
@@ -127,8 +135,8 @@ def main():
     # Use the original output files, never a compressed chat screenshot.
     token = token_from_kaggle()
     if not token:
-        print("\nGITHUB_TOKEN Kaggle Secret is missing or inaccessible.")
-        print("Kaggle notebook: Add-ons > Secrets > Add a secret called GITHUB_TOKEN.")
+        print("\nGitHub Kaggle Secret 'pushLungs' or 'GITHUB_TOKEN' is missing or inaccessible.")
+        print("Kaggle notebook: Add-ons > Secrets > enable existing 'pushLungs'.")
         print("Use a fine-grained token with Contents: Read and write permission")
         print("for only itsCodeBakery/scribble-uncertainty-lung-segmentation.")
         print("Enable the secret for this notebook and re-run Block 07.")
