@@ -25,6 +25,7 @@ DIRS = [
     BASE / "outputs/casrnet_recovered_pilot",
     BASE / "outputs/casrnet_recovered_five_examples",
     BASE / "outputs/casrnet_three_row_pilot",
+    BASE / "outputs/sota_pilot_unetpp_vs_casrnet",
 ]
 AUDITS = [
     BASE / "audits/block00_environment.json",
