@@ -76,7 +76,7 @@ For each compared method, preserve: source implementation/architecture citation,
      https://github.com/itsCodeBakery/scribble-uncertainty-lung-segmentation.git
    ```
 4. Run the initial dataset/checkpoint audit. Do not begin training until split coverage and usable checkpoints have been identified.
-5. When ready to push from Kaggle, add a scoped GitHub personal access token as a **Kaggle Secret** (for example `GITHUB_TOKEN`); never paste a token into notebook source or output.
+5. When ready to push from Kaggle, add a scoped GitHub personal access token as a **Kaggle Secret** (`pushLungs` or `GITHUB_TOKEN`); never paste a token into notebook source or output.
 
 Kaggle notebooks already supply many common scientific packages. See `requirements.txt` for the repository's baseline dependency list.
 
@@ -91,7 +91,7 @@ The version-controlled scripts under `experiments/qualitative_comparison/` cover
 - Block 06 — **three-row, five-column** journal-layout figure from verified predictions;
 - Block 07 — authenticated GitHub synchronization of generated figures and supporting artifacts.
 
-The Block 07 script is `experiments/qualitative_comparison/05_sync_verified_artifacts.py`. Run it from Kaggle only after Blocks 05 and 06 succeed. Configure the Kaggle Secret `GITHUB_TOKEN` with access limited to this repository (GitHub **Contents: Read and write**). It uploads the original Kaggle **300-dpi PNG and PDF**, the previous five-row figure, five recovered prediction `.npz` arrays, saved CSV and JSON metadata, and SHA-256 manifest; it does **not** upload raw CT datasets, full CT volumes, original checkpoints, or credentials. It verifies that the remote Git commit equals the local commit after pushing.
+The Block 07 script is `experiments/qualitative_comparison/05_sync_verified_artifacts.py`. Run it from Kaggle only after Blocks 05 and 06 succeed. Configure the Kaggle Secret `pushLungs` (or `GITHUB_TOKEN`) with access limited to this repository (GitHub **Contents: Read and write**). It uploads the original Kaggle **300-dpi PNG and PDF**, the previous five-row figure, five recovered prediction `.npz` arrays, saved CSV and JSON metadata, and SHA-256 manifest; it does **not** upload raw CT datasets, full CT volumes, original checkpoints, or credentials. It verifies that the remote Git commit equals the local commit after pushing.
 
 The current approved three-row layout is a **qualitative pilot with a recovered checkpoint**, not independently verified quantitative evidence from the final 2.5-D student. Retain the original five-case reproducibility audit and its provenance separately.
 
