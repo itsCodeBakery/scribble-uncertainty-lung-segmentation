@@ -80,6 +80,23 @@ For each compared method, preserve: source implementation/architecture citation,
 
 Kaggle notebooks already supply many common scientific packages. See `requirements.txt` for the repository's baseline dependency list.
 
+## Preserving and synchronizing Kaggle figure outputs
+
+The version-controlled scripts under `experiments/qualitative_comparison/` cover:
+
+- Block 00 — original environment/split audit;
+- Block 03 — original NIfTI test-source geometry audit;
+- Block 04 — recovered CASR-Net single-slice inference;
+- Block 05 — reproducibility check against **five archived qualitative examples**;
+- Block 06 — **three-row, five-column** journal-layout figure from verified predictions;
+- Block 07 — authenticated GitHub synchronization of generated figures and supporting artifacts.
+
+The Block 07 script is `experiments/qualitative_comparison/05_sync_verified_artifacts.py`. Run it from Kaggle only after Blocks 05 and 06 succeed. Configure the Kaggle Secret `GITHUB_TOKEN` with access limited to this repository (GitHub **Contents: Read and write**). It uploads the original Kaggle **300-dpi PNG and PDF**, the previous five-row figure, five recovered prediction `.npz` arrays, saved CSV and JSON metadata, and SHA-256 manifest; it does **not** upload raw CT datasets, full CT volumes, original checkpoints, or credentials. It verifies that the remote Git commit equals the local commit after pushing.
+
+The current approved three-row layout is a **qualitative pilot with a recovered checkpoint**, not independently verified quantitative evidence from the final 2.5-D student. Retain the original five-case reproducibility audit and its provenance separately.
+
+---
+
 ## Repository organization
 
 ```text
