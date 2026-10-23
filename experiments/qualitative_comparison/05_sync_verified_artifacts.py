@@ -26,12 +26,13 @@ DIRS = [
     BASE / "outputs/casrnet_recovered_five_examples",
     BASE / "outputs/casrnet_three_row_pilot",
     BASE / "outputs/sota_pilot_unetpp_vs_casrnet",
+    BASE / "outputs/sota_unet_effb0_vs_casrnet",
 ]
 AUDITS = [
     BASE / "audits/block00_environment.json",
     BASE / "audits/block03_casrnet_input_compatibility.json",
 ]
-INCLUDE = {".npz", ".png", ".pdf", ".json", ".csv", ".txt"}
+INCLUDE = {".npz", ".png", ".pdf", ".json", ".csv", ".txt", ".gz"}
 MAX_BYTES = 24 * 1024 * 1024  # Regular git; never upload large raw data
 SYNC_MANIFEST = BASE / "sync/artifact_checksums.csv"
 SYNC_SUMMARY = BASE / "sync/last_verified_sync.json"
