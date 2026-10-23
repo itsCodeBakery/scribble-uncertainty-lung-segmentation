@@ -1,0 +1,305 @@
+{
+  "checked_utc": "2026-10-23T13:04:12.538420+00:00",
+  "dataset": "andrewmvd/covid19-ct-scans",
+  "checkpoint_exists": true,
+  "checkpoint_size_bytes": 76132345,
+  "config": {
+    "image_size": 256,
+    "hu_clip_min": -1000,
+    "hu_clip_max": 400,
+    "min_lung_pixels": 500,
+    "keep_all_infected_slices": true,
+    "keep_noninfected_lung_slices": true,
+    "seed": 42
+  },
+  "test_slices": 727,
+  "test_cases": [
+    "coronacases_001",
+    "coronacases_004",
+    "coronacases_009",
+    "radiopaedia_7"
+  ],
+  "case_files": {
+    "coronacases_001": {
+      "ct_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/ct_scans/coronacases_org_001.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          301
+        ],
+        "dtype": "int16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.8105469942092896,
+          0.8105469942092896,
+          1.0
+        ]
+      },
+      "infection_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/infection_mask/coronacases_001.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          301
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.8105469942092896,
+          0.8105469942092896,
+          1.0
+        ]
+      },
+      "lung_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/lung_mask/coronacases_001.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          301
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.8105469942092896,
+          0.8105469942092896,
+          1.0
+        ]
+      }
+    },
+    "coronacases_004": {
+      "ct_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/ct_scans/coronacases_org_004.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          270
+        ],
+        "dtype": "int16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      },
+      "infection_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/infection_mask/coronacases_004.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          270
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      },
+      "lung_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/lung_mask/coronacases_004.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          270
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      }
+    },
+    "coronacases_009": {
+      "ct_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/ct_scans/coronacases_org_009.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          256
+        ],
+        "dtype": "int16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      },
+      "infection_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/infection_mask/coronacases_009.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          256
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      },
+      "lung_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/lung_mask/coronacases_009.nii",
+        "exists": true,
+        "shape": [
+          512,
+          512,
+          256
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          1.0
+        ]
+      }
+    },
+    "radiopaedia_7": {
+      "ct_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/ct_scans/radiopaedia_org_covid-19-pneumonia-7_85703_0-dcm.nii",
+        "exists": true,
+        "shape": [
+          630,
+          630,
+          45
+        ],
+        "dtype": "uint8",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          6.0
+        ]
+      },
+      "infection_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/infection_mask/radiopaedia_7_85703_0.nii",
+        "exists": true,
+        "shape": [
+          630,
+          630,
+          45
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          6.0
+        ]
+      },
+      "lung_mask_path": {
+        "path": "/kaggle/input/datasets/andrewmvd/covid19-ct-scans/lung_mask/radiopaedia_7_85703_0.nii",
+        "exists": true,
+        "shape": [
+          630,
+          630,
+          45
+        ],
+        "dtype": "uint16",
+        "axis_codes": [
+          "L",
+          "A",
+          "S"
+        ],
+        "spacing": [
+          0.6835939884185791,
+          0.6835939884185791,
+          6.0
+        ]
+      }
+    }
+  },
+  "example_slice": {
+    "case": "coronacases_001",
+    "slice_idx": 139,
+    "saved_lesion_pixels": 6973,
+    "saved_lung_pixels": 35741,
+    "image_shape": [
+      512,
+      512,
+      301
+    ],
+    "infection_shape": [
+      512,
+      512,
+      301
+    ],
+    "ct_slice_shape": [
+      512,
+      512
+    ],
+    "ct_min_max": [
+      -1021.0,
+      1626.0
+    ],
+    "lesion_values": [
+      0.0,
+      1.0
+    ],
+    "source_lesion_pixels": 6973,
+    "nearest_resized_lesion_pixels": 1730,
+    "nearest_resized_lung_pixels": 8940,
+    "nearest_lung_count_matches": false,
+    "nearest_lesion_count_matches": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-23T13:27:29.083539+00:00",
+  "purpose": "3-row presentation of five-exemplar checkpoint recovery",
+  "figure_is_final_manuscript_result": false,
+  "selection": "Predeclared examples from three distinct held-out cases; not a test-set best/median/worst claim",
+  "selected": [
+    {
+      "row": "A",
+      "case_id": "radiopaedia_7",
+      "slice_idx": 32,
+      "dice": 0.8533333333333334,
+      "iou": 0.7441860465116279,
+      "gt_pixels": 3843,
+      "pred_pixels": 3057,
+      "npz_source": "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/radiopaedia_7_slice_0032.npz"
+    },
+    {
+      "row": "B",
+      "case_id": "coronacases_009",
+      "slice_idx": 120,
+      "dice": 0.8326596604688763,
+      "iou": 0.7132963988919667,
+      "gt_pixels": 1283,
+      "pred_pixels": 1191,
+      "npz_source": "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/coronacases_009_slice_0120.npz"
+    },
+    {
+      "row": "C",
+      "case_id": "coronacases_001",
+      "slice_idx": 125,
+      "dice": 0.6733954451345756,
+      "iou": 0.5076082715567695,
+      "gt_pixels": 2307,
+      "pred_pixels": 1557,
+      "npz_source": "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/coronacases_001_slice_0125.npz"
+    }
+  ],
+  "original_five_examples_preserved": true,
+  "checkpoint_sha256": "97a6166d3b222187b90312929588196bf6797240b659d37eca93f8f49a06a020",
+  "caption": "Qualitative pulmonary infection segmentation in three distinct held-out CT cases using the recovered CASR-Net student. Columns show the chest CT image, reference infection mask, student prediction, reference/prediction boundaries (green/red), and pixel-wise segmentation errors (true positive: white; false positive: red; false negative: blue). Dice is reported for each slice. The recovered visualization checkpoint is not identified as the final 2.5-D student used for the primary quantitative results.",
+  "png": "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_three_row_pilot/CASRNet_Qualitative_Three_Cases_Pilot.png",
+  "pdf": "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_three_row_pilot/CASRNet_Qualitative_Three_Cases_Pilot.pdf"
+}

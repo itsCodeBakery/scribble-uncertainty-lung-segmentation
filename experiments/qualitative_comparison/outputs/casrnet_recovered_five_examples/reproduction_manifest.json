@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-23T13:20:31.896262+00:00",
+  "status": "ALL_MATCH",
+  "matches": 5,
+  "total": 5,
+  "checkpoint_model_name": "casrnet_student_recovered_from_teacher_tta",
+  "checkpoint_epoch": 20,
+  "checkpoint_sha256": "97a6166d3b222187b90312929588196bf6797240b659d37eca93f8f49a06a020",
+  "inference": "2D grayscale repeated across 3 channels, HU [-1000,400] normalized to [0,1], 4-view flip TTA; threshold 0.035, lung restriction",
+  "study_scope": "Five archived recovered-qualitative examples; NOT final CASR-Net 0.8046 test score",
+  "output_files": [
+    "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/archived_reproduction_comparison.csv",
+    "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/CASRNet_Recovered_Five_Examples.png",
+    "/kaggle/working/CASR-NET-QUAL-FIGS/experiments/qualitative_comparison/outputs/casrnet_recovered_five_examples/CASRNet_Recovered_Five_Examples.pdf"
+  ]
+}

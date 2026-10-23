@@ -1,0 +1,11 @@
+{
+  "verified_utc": "2026-10-23T13:43:32.371322+00:00",
+  "branch": "casrnet-qualitative-comparison-2026",
+  "reproduction": "5/5 archived recovered checkpoints predictions match",
+  "figure_layout": "three rows / five columns / three distinct test cases",
+  "source": "original Kaggle high-resolution outputs",
+  "files_count": 17,
+  "bytes_total": 6560353,
+  "large_weights_or_datasets_uploaded": false,
+  "note": "Recovered qualitative model is NOT the identified final 2.5D checkpoint."
+}
